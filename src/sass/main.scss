@@ -1,0 +1,22 @@
+//Import files
+@import "abstracts/functions";
+@import "abstracts/mixins";
+@import "abstracts/variables";
+
+@import "base/animations";
+@import "base/base";
+@import "base/typography";
+@import "base/utilities";
+
+@import "components/navbar";
+@import "components/buttons";
+@import "components/slider";
+@import "components/gallery";
+@import "components/modal";
+
+@import "sections/hero";
+@import "sections/about";
+@import "sections/contact";
+@import "sections/testimonials";
+@import "sections/education";
+@import "sections/portfolio";

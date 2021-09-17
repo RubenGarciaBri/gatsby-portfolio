@@ -1,0 +1,151 @@
+.section-contact {
+  padding: 5rem 1.5rem 7.5rem 1.5rem;
+
+  .contact {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    overflow: hidden;
+    border-radius: 5px;
+
+    @include respond(tab-port) {
+      flex-direction: column;
+    }
+
+    &__left {
+      width: 60%;
+      padding: 5rem;
+      background-color: #fff;
+      color: var(--color-bg);
+      // background: linear-gradient(to bottom, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)),
+      //   url('https://www.google.com/maps/d/u/0/thumbnail?mid=151ble9JQk6mBiqrd2huHrrrqdNc&hl=en');
+      // background-position: center;
+      // background-size: cover;
+      // background-repeat: no-repeat;
+
+      @include respond(tab-port) {
+        width: 100%;
+        padding: 6rem 8rem;
+      }
+
+      @include respond(phone) {
+        padding: 4rem;
+      }
+
+      &-heading {
+        margin-bottom: .5rem;
+      }
+
+      &-subheading {
+        margin-bottom: 3rem;
+      }
+
+      &-list {
+        font-size: 2.2rem;
+        margin-bottom: 3.5rem;
+
+        &__item {
+          margin-bottom: .8rem;
+
+          & i {
+            margin-right: 1.7rem;
+            font-size: 1.8rem;
+          }
+        }
+      }
+
+      &-social {
+        display: flex;
+
+        &__item {
+
+          & a {
+            font-size: 2.8rem;
+            padding: 0 1rem;
+            color: var(--color-bg);
+          }
+
+          &:not(:last-child) a {
+          }
+        }
+      }
+    }
+
+    &__right {
+      width: 40%;
+      padding: 5rem;
+      background-color: var(--color-primary);
+
+      @include respond(tab-land) {
+        padding: 4rem;
+       }
+
+      @include respond(tab-port) {
+        width: 100%;
+        padding: 6rem 8rem;
+      }
+
+      @include respond(phone) {
+        padding: 4rem;
+      }
+
+      &-form {
+        width: 90%;
+        margin: 0 auto;
+        color: #fff;
+        font-weight: 400;
+
+        @include respond(tab-land) {
+          width: 100%
+         }
+
+        &__input,
+        &__textarea {
+          font-size: 1.8rem;
+          color: inherit;
+          border-radius: 5px;
+          border: 1px solid #fff;
+          padding: 1.3rem 1.8rem;
+          background: var(--color-primary);
+          font-family: 'Nunito Sans',
+          sans-serif;
+        }
+
+        &__input::placeholder,
+        &__textarea::placeholder {
+          color: #eee;
+        }
+
+        &__input {
+          display: block;
+          width: 100%;
+          margin-bottom: 1.2rem;
+        }
+
+        &__textarea {
+          width: 100%;
+          resize: none;
+        }
+
+        &__btn {
+          border: 2px solid #fff;
+          width: 100%;
+          margin-top: 1rem;
+          cursor: pointer;
+          transition: all .3s;
+          padding: 1.6rem 4.8rem;
+          border-radius: 25rem;
+          font-size: 1.8rem;
+          font-weight: 800;
+          letter-spacing: 1px;
+
+          &:hover {
+            color: var(--color-primary);
+            background-color: #fff;
+            transform: translateY(-5px);
+          }
+        }
+      }
+    }
+  }
+}
