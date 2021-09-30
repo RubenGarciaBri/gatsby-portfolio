@@ -1,6 +1,7 @@
 import * as React from "react";
 import PropTypes from "prop-types";
 import { Link } from "gatsby";
+import { FaCode, FaBars } from "react-icons/fa";
 
 const Header = ({ siteTitle }) => (
   <nav className="navbar py-3 z-50">
