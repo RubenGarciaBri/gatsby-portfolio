@@ -1,7 +1,7 @@
 import React from "react";
 // import profilePicture from "../../images/prof3.png";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
-// import Navbar from "../layout/Navbar";
+import Header from "../header";
 import { StaticImage } from "gatsby-plugin-image";
 
 const Hero = () => {
@@ -10,7 +10,7 @@ const Hero = () => {
       id="section-1"
       className="hero-section bg-gray-900 text-white px-4"
     >
-      {/* <Navbar /> */}
+      <Header />
       <div className="main-container flex items-stretch justify-items-start mt-2">
         <div className="w-1/2 pl-10">
           <h1 className="text-6xl mt-16 font-bold mb-6">Ruben Garcia</h1>
