@@ -56,7 +56,8 @@ const Hero = () => {
           <StaticImage
             placeholder="blurred"
             src="../../images/prof3.png"
-            className="w-3/4"
+            className="w-3/4 hidden md:block"
+            alt="Ruben's profile picture"
           />
         </div>
       </div>
