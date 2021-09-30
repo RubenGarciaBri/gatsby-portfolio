@@ -1,8 +1,8 @@
 import React from "react";
 // import profilePicture from "../../images/prof3.png";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
-import Navbar from "../layout/Navbar";
-import {StaticImage} from "gatsby-plugin-image"
+// import Navbar from "../layout/Navbar";
+import { StaticImage } from "gatsby-plugin-image";
 
 const Hero = () => {
   return (
@@ -10,7 +10,7 @@ const Hero = () => {
       id="section-1"
       className="hero-section bg-gray-900 text-white px-4"
     >
-      <Navbar />
+      {/* <Navbar /> */}
       <div className="main-container flex items-stretch justify-items-start mt-2">
         <div className="w-1/2 pl-10">
           <h1 className="text-6xl mt-16 font-bold mb-6">Ruben Garcia</h1>
@@ -53,7 +53,11 @@ const Hero = () => {
           </a>
         </div>
         <div className="w-1/2">
-          <StaticImage placeholder="blurred" src="../../images/prof3.png" className="w-3/4" />
+          <StaticImage
+            placeholder="blurred"
+            src="../../images/prof3.png"
+            className="w-3/4"
+          />
         </div>
       </div>
     </section>
