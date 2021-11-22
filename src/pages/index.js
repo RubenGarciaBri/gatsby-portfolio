@@ -7,10 +7,11 @@ import Certifications from "../components/sections/Certifications";
 import Portfolio from "../components/sections/Portfolio";
 import Contact from "../components/sections/Contact";
 import Seo from "../components/seo";
+import { heroData } from "../components/data/heroData"
 
 const IndexPage = () => (
   <>
-    <Hero />
+    <Hero {...heroData}/>
     <About />
     <Certifications />
     <Portfolio />

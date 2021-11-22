@@ -4,21 +4,17 @@ import { FaGithub, FaLinkedin } from "react-icons/fa";
 import Header from "../header";
 import { StaticImage } from "gatsby-plugin-image";
 
-const Hero = () => {
+const Hero = ({ heading, subHeading, buttonPrimary, buttonSecondary }) => {
   return (
     <section
       id="section-1"
-      className="hero-section bg-gray-900 text-white px-4"
+      className="px-4 text-white bg-gray-900 hero-section"
     >
       <Header />
-      <div className="main-container flex items-stretch justify-items-start mt-2">
+      <div className="flex items-stretch mt-2 main-container justify-items-start">
         <div className="w-1/2 pl-10">
-          <h1 className="text-6xl mt-16 font-bold mb-6">Ruben Garcia</h1>
-          <p className="text-2xl font-semibold mb-1">
-            Front-end React Developer based in London, UK.
-            <br />
-            Proficient with HTML, CSS, Modern ES6 Javascript and React/Redux.
-          </p>
+          <h1 className="mt-16 mb-6 text-6xl font-bold">{heading}</h1>
+          <p className="mb-1 text-2xl font-semibold">{subHeading}</p>
           <ul className="flex mb-4">
             <li className="mr-2">
               <a
@@ -43,20 +39,20 @@ const Hero = () => {
             href="#section-5"
             className="btn btn--primary hero__left-btn shadow-s"
           >
-            Let's Talk
+            {buttonPrimary}
           </a>
           <a
             href="#section-4"
             className="btn btn--secondary hero__left-btn shadow-s"
           >
-            See My Work
+            {buttonSecondary}
           </a>
         </div>
         <div className="w-1/2">
           <StaticImage
             placeholder="blurred"
             src="../../images/prof3.png"
-            className="w-3/4 hidden md:block"
+            className="hidden w-3/4 md:block"
             alt="Ruben's profile picture"
           />
         </div>
