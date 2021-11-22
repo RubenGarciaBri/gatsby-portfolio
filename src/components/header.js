@@ -2,22 +2,8 @@ import React, { useState, useRef, useEffect } from "react";
 import PropTypes from "prop-types";
 import { Link } from "gatsby";
 import { FaCode, FaBars } from "react-icons/fa";
+import { useOutsideClick } from "../utils/useOutsideClick";
 
-const useOutsideClick = (ref, callback) => {
-  const handleClick = e => {
-    if (ref.current && !ref.current.contains(e.target)) {
-      callback();
-    }
-  };
-
-  useEffect(() => {
-    document.addEventListener("click", handleClick);
-
-    return () => {
-      document.removeEventListener("click", handleClick);
-    };
-  });
-};
 
 const Header = ({ siteTitle }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -30,8 +16,8 @@ const Header = ({ siteTitle }) => {
   });
 
   return (
-    <nav className="navbar py-3 z-50">
-      <div className="main-container flex items-center justify-between">
+    <nav className="z-50 py-3 navbar">
+      <div className="flex items-center justify-between main-container">
         <div className="logo-box">
           <a href="#section-1" className="">
             <FaCode className="mr-40 text-6xl" />
@@ -41,7 +27,7 @@ const Header = ({ siteTitle }) => {
           <li className="">
             <a
               href="#section-2"
-              className="mr-4 py-2 px-2 font-bold text-xl tracking-wide"
+              className="px-2 py-2 mr-4 text-xl font-bold tracking-wide"
             >
               About
             </a>
@@ -49,7 +35,7 @@ const Header = ({ siteTitle }) => {
           <li className="navbar__list-item">
             <a
               href="#section-3"
-              className="mr-4 py-2 px-2 font-bold text-xl tracking-wide"
+              className="px-2 py-2 mr-4 text-xl font-bold tracking-wide"
             >
               Certifications
             </a>
@@ -57,7 +43,7 @@ const Header = ({ siteTitle }) => {
           <li className="navbar__list-item">
             <a
               href="#section-4"
-              className="mr-4 py-2 px-2 font-bold text-xl tracking-wide"
+              className="px-2 py-2 mr-4 text-xl font-bold tracking-wide"
             >
               Portfolio
             </a>
@@ -65,7 +51,7 @@ const Header = ({ siteTitle }) => {
           <li className="navbar__list-item">
             <a
               href="#section-5"
-              className="py-2 px-2 font-bold text-xl tracking-wide"
+              className="px-2 py-2 text-xl font-bold tracking-wide"
             >
               Contact
             </a>
@@ -74,12 +60,12 @@ const Header = ({ siteTitle }) => {
         {/* Mobile Menu */}
         <FaBars
           onClick={() => setIsMenuOpen(!isMenuOpen)}
-          className="sideNav__icon md:hidden cursor-pointer text-xl"
+          className="text-xl cursor-pointer sideNav__icon md:hidden"
         />
         {isMenuOpen ? (
           <ul
             ref={mobileMenu}
-            className="sideNav shadow-slim md:hidden p-10 bg-blue-500"
+            className="p-10 bg-blue-500 sideNav shadow-slim md:hidden"
           >
             <li className="sideNav__item">
               <a href="#section-2">
