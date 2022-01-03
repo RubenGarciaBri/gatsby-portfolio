@@ -9,3 +9,7 @@
 .main-container {
   @apply max-w-screen-xl mx-auto;
 }
+
+p {
+  line-height: 2rem !important;
+}

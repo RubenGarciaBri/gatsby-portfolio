@@ -1,4 +1,5 @@
 import React from "react";
+
 import {
   FaQuestion,
   FaCodeBranch,
@@ -6,29 +7,22 @@ import {
   FaBullhorn,
   FaChartLine,
 } from "react-icons/fa";
+import { skills } from "./data/skills";
 
 const SkillsAside = () => {
   return (
     <div className="skillsAside">
-      <h5 className="text-xl mb-4 font-bold">Skills</h5>
+      <h5 className="mb-4 text-xl font-bold">Skills</h5>
       <ul>
-        <li className="flex items-center py-2 px-6 bg-gray-800 rounded-lg max-w-xs shadow mb-3 font-semibold">
-          <FaQuestion className="skillsAside__item-icon mr-2" /> Problem Solving
-        </li>
-        <li className="flex items-center py-2 px-6 bg-gray-800 rounded-lg max-w-xs shadow mb-3 font-semibold">
-          <FaCodeBranch className="skillsAside__item-icon mr-2" /> Team Collaboration
-        </li>
-        <li className="flex items-center py-2 px-6 bg-gray-800 rounded-lg max-w-xs shadow mb-3 font-semibold">
-          <FaBrain className="skillsAside__item-icon mr-2" /> Deep Work
-        </li>
-        <li className="flex items-center py-2 px-6 bg-gray-800 rounded-lg max-w-xs shadow mb-3 font-semibold">
-          <FaBullhorn className="skillsAside__item-icon mr-2" /> Effective
-          Communication
-        </li>
-        <li className="flex items-center py-2 px-6 bg-gray-800 rounded-lg max-w-xs shadow mb-3 font-semibold">
-          <FaChartLine className="skillsAside__item-icon mr-2" /> Continuous
-          Improvement
-        </li>
+        {skills &&
+          skills.map(({ title, Icon }) => {
+            return (
+              <li className="flex items-center max-w-xs px-5 py-3 mb-3 font-semibold bg-gray-700 rounded-lg shadow">
+                {Icon}
+                <span className="ml-3">{title}</span>
+              </li>
+            );
+          })}
       </ul>
     </div>
   );

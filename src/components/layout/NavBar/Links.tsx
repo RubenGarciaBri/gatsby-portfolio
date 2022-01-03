@@ -1,12 +1,16 @@
 import * as React from "react";
 import Link from "./Link";
 
-const Links = ({ navLinks }) => {
+interface IPropTypes {
+  // TODO: Make more specific
+  navLinks: Array<any>;
+}
+
+const Links = ({ navLinks }: IPropTypes) => {
   return (
     <ul className="flex items-center justify-center hidden sm:flex">
       {navLinks &&
-        navLinks.map(navLink => {
-          const { title, sectionLink } = navLink;
+        navLinks.map(({ title, sectionLink }) => {
           return <Link title={title} sectionLink={sectionLink} />;
         })}
     </ul>

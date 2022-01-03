@@ -1,33 +1,37 @@
 import React from "react";
+
 import profilePicture from "../../images/newprofilepic.jpg";
 import SkillsAside from "../SkillsAside";
 
 const About = () => {
   return (
-    <section id="section-2" className="section-about bg-black py-24 px-4 text-white">
-      <div className="slider flex flex-wrap justify-between  max-w-screen-lg gap-2 text-center mx-auto">
-        <div className="item text-5xl">
+    <section
+      id="section-2"
+      className="px-4 py-24 text-white bg-gray-900 section-about"
+    >
+      <div className="flex flex-wrap justify-between max-w-screen-lg gap-2 mx-auto text-center slider">
+        <div className="text-5xl item">
           <i className="devicon-html5-plain colored"></i>
         </div>
-        <div className="item text-5xl">
+        <div className="text-5xl item">
           <i className="devicon-css3-plain colored"></i>
         </div>
-        <div className="item text-5xl">
+        <div className="text-5xl item">
           <i className="devicon-sass-original colored"></i>
         </div>
-        <div className="item text-5xl">
+        <div className="text-5xl item">
           <i className="devicon-javascript-plain colored"></i>
         </div>
-        <div className="item text-5xl">
+        <div className="text-5xl item">
           <i className="devicon-react-original colored"></i>
         </div>
-        <div className="item text-5xl">
+        <div className="text-5xl item">
           <i className="devicon-redux-original colored"></i>
         </div>
-        <div className="item text-5xl">
+        <div className="text-5xl item">
           <i className="devicon-webpack-plain colored"></i>
         </div>
-        <div className="item text-5xl">
+        <div className="text-5xl item">
           <i className="devicon-nodejs-plain colored"></i>
         </div>
       </div>
@@ -61,14 +65,18 @@ const About = () => {
           </div>
         </div>
       </div> */}
-      <div className="about main-container flex items-center justify-center mt-24">
-        <div className="w-1/3 flex flex-col justify-center">
-          <img src={profilePicture} className="shadow-md w-7/12 rounded-lg mb-8" alt="" />
+      <div className="flex items-center justify-center mt-24 about main-container">
+        <div className="flex flex-col justify-center w-1/3">
+          <img
+            src={profilePicture}
+            className="w-7/12 mb-8 rounded-lg shadow-md"
+            alt=""
+          />
           <SkillsAside />
         </div>
-        <div className="w-2/3 self-start">
-          <h2 className="text-4xl font-bold mb-6">About Me</h2>
-          <p className="text-xl mb-4">
+        <div className="self-start w-2/3">
+          <h2 className="mb-6 text-4xl font-bold">About Me</h2>
+          <p className="mb-6 text-xl">
             As a Front-end Developer, my skills go from the most fundamental
             building blocks of the web to full-scale modern{" "}
             <b>single-page applications</b>. I specialise in React and I'm
@@ -76,7 +84,7 @@ const About = () => {
             familiar with the most popular
             <b>web tools</b> such as Webpack, Babel, NPM, Git, etc.
           </p>
-          <p className="text-xl mb-4">
+          <p className="mb-6 text-xl">
             On top of that,{" "}
             <b>
               I feel confident working with API's as well as writing asyncronous
@@ -88,7 +96,7 @@ const About = () => {
             <b>beautifully designed user interfaces</b> that provide a great
             user experience.
           </p>
-          <p className="text-xl mb-4">
+          <p className="mb-6 text-xl">
             I love to face new challenges constantly with the goal of becoming a
             better programmer. All my published projects are showcased below as
             evidence of my technical skills mentiones here.
