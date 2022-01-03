@@ -3,19 +3,18 @@ import React from "react";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import Header from "../header";
 import { StaticImage } from "gatsby-plugin-image";
+import PrimaryButton from "../Buttons/PrimaryButton/PrimaryButton";
+import SecondaryButton from "../Buttons/SecondaryButton/SecondaryButton";
 
-const Hero = ({ heading, subHeading, buttonPrimary, buttonSecondary }) => {
+const Hero = ({ heading, subHeading }) => {
   return (
-    <section
-      id="section-1"
-      className="px-4 text-white bg-gray-900 hero-section"
-    >
+    <section id="section-1" className="px-4 hero-section">
       <Header />
       <div className="flex items-stretch mt-2 main-container justify-items-start">
         <div className="w-1/2 pl-10">
           <h1 className="mt-16 mb-6 text-6xl font-bold">{heading}</h1>
-          <p className="mb-1 text-2xl font-semibold">{subHeading}</p>
-          <ul className="flex mb-4">
+          <p className="text-2xl font-semibold">{subHeading}</p>
+          <ul className="flex">
             <li className="mr-2">
               <a
                 href="https://www.linkedin.com/in/ruben-garcia-bri/"
@@ -25,7 +24,7 @@ const Hero = ({ heading, subHeading, buttonPrimary, buttonSecondary }) => {
                 <FaLinkedin />
               </a>
             </li>
-            <li className="hero__left-social__item">
+            <li>
               <a
                 href="https://github.com/RubenGarciaBri"
                 target="_blank"
@@ -35,18 +34,10 @@ const Hero = ({ heading, subHeading, buttonPrimary, buttonSecondary }) => {
               </a>
             </li>
           </ul>
-          <a
-            href="#section-5"
-            className="btn btn--primary hero__left-btn shadow-s"
-          >
-            {buttonPrimary}
-          </a>
-          <a
-            href="#section-4"
-            className="btn btn--secondary hero__left-btn shadow-s"
-          >
-            {buttonSecondary}
-          </a>
+          <div className="flex gap-x-4">
+            <PrimaryButton />
+            <SecondaryButton />
+          </div>
         </div>
         <div className="w-1/2">
           <StaticImage
