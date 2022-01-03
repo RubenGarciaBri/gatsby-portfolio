@@ -2,6 +2,7 @@ import React from "react";
 
 import profilePicture from "../../images/newprofilepic.jpg";
 import SkillsAside from "../SkillsAside";
+import { sliderIcons } from "../data/sliderIcons";
 
 const About = () => {
   return (
@@ -10,30 +11,14 @@ const About = () => {
       className="px-4 py-24 text-white bg-gray-900 section-about"
     >
       <div className="flex flex-wrap justify-between max-w-screen-lg gap-2 mx-auto text-center slider">
-        <div className="text-5xl item">
-          <i className="devicon-html5-plain colored"></i>
-        </div>
-        <div className="text-5xl item">
-          <i className="devicon-css3-plain colored"></i>
-        </div>
-        <div className="text-5xl item">
-          <i className="devicon-sass-original colored"></i>
-        </div>
-        <div className="text-5xl item">
-          <i className="devicon-javascript-plain colored"></i>
-        </div>
-        <div className="text-5xl item">
-          <i className="devicon-react-original colored"></i>
-        </div>
-        <div className="text-5xl item">
-          <i className="devicon-redux-original colored"></i>
-        </div>
-        <div className="text-5xl item">
-          <i className="devicon-webpack-plain colored"></i>
-        </div>
-        <div className="text-5xl item">
-          <i className="devicon-nodejs-plain colored"></i>
-        </div>
+        {sliderIcons &&
+          sliderIcons.map(({ iconClassName }, index) => {
+            return (
+              <div key={index} className="text-5xl item">
+                <i className={`${iconClassName} colored`}></i>
+              </div>
+            );
+          })}
       </div>
       {/* <div className="slider-mobile sm:hidden">
         <div className="slider-mobile__row">
