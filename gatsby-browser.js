@@ -5,7 +5,7 @@ import { HelmetProvider } from "react-helmet-async"
 import "devicon/devicon.min.css";
 
 // CSS Files
-import "./src/styles/tailwind.css";
+import "./src/styles/global.css";
 
 
 export const wrapRootElement = ({ element }) => {
