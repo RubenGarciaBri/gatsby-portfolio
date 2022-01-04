@@ -7,7 +7,7 @@ import {
   FaBullhorn,
   FaChartLine,
 } from "react-icons/fa";
-import { skills } from "./data/skills";
+import { skills } from "../data/skills";
 
 const SkillsAside = () => {
   return (

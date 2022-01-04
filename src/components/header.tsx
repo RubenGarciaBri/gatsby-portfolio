@@ -35,7 +35,7 @@ const Header = ({ siteTitle }) => {
           </li>
           <li className="sideNav__item">
             <a href="#section-3">
-              <span>Certifications</span>
+              <span>Certificates</span>
             </a>
           </li>
           <li className="sideNav__item">

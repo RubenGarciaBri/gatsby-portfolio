@@ -2,14 +2,12 @@ import React from "react";
 
 import profilePicture from "../../images/newprofilepic.jpg";
 import SkillsAside from "../SkillsAside";
-import { sliderIcons } from "../data/sliderIcons";
+import { sliderIcons } from "../../data/sliderIcons";
+import SectionLayout from "../SectionLayout/SectionLayout";
 
 const About = () => {
   return (
-    <section
-      id="section-2"
-      className="px-4 py-24 text-white bg-gray-900 section-about"
-    >
+    <SectionLayout sectionId="section-2" classNames="text-white bg-gray-900">
       <div className="flex flex-wrap justify-between max-w-screen-lg gap-2 mx-auto text-center slider">
         {sliderIcons &&
           sliderIcons.map(({ iconClassName }, index) => {
@@ -93,7 +91,7 @@ const About = () => {
           </p>
         </div>
       </div>
-    </section>
+    </SectionLayout>
   );
 };
 

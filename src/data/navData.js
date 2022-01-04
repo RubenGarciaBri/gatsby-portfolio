@@ -4,7 +4,7 @@ export const navData = [
     sectionLink: "#section-2",
   },
   {
-    title: "Certifications",
+    title: "Certificates",
     sectionLink: "#section-3",
   },
   {

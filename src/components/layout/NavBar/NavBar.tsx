@@ -1,7 +1,7 @@
 import React from "react";
 import { FaCode, FaBars } from "react-icons/fa";
 import Links from "./Links";
-import { navData } from "../../data/navData";
+import { navData } from "../../../data/navData";
 
 const Navbar = () => {
   return (
@@ -23,7 +23,7 @@ const Navbar = () => {
           </li>
           <li className="sideNav__item">
             <a href="#section-3">
-              <span>Certifications</span>
+              <span>Certificates</span>
             </a>
           </li>
           <li className="sideNav__item">
