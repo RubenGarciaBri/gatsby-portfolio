@@ -3,14 +3,15 @@ import React from "react";
 import SectionLayout from "../SectionLayout/SectionLayout";
 import Certificate from "../Certificate/Certificate";
 import { certificatesData } from "../../data/certificatesData";
+import SectionHeading from "../SectionHeading/SectionHeading";
 
 const Certificates = () => {
   return (
     <SectionLayout sectionId="section-3" classNames="bg-blue-600">
       <div className="text-center main-container">
-        <h2 className="mb-8 text-4xl font-bold text-white">Certificates</h2>
+        <SectionHeading>Certificates</SectionHeading>
       </div>
-      <div className="flex flex-col gap-y-8 main-container">
+      <div className="flex flex-col gap-y-16 main-container">
         {certificatesData &&
           certificatesData.map(
             ({ school, name, duration, description, subjects, url }) => {

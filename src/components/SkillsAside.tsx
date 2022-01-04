@@ -17,7 +17,10 @@ const SkillsAside = () => {
         {skills &&
           skills.map(({ title, Icon }, index) => {
             return (
-              <li key={index} className="flex items-center max-w-xs px-5 py-3 mb-3 font-semibold bg-gray-700 rounded-lg shadow">
+              <li
+                key={index}
+                className="flex items-center max-w-xs px-5 py-3 mb-3 font-semibold bg-gray-700 rounded-lg shadow"
+              >
                 {Icon}
                 <span className="ml-3">{title}</span>
               </li>

@@ -44,7 +44,7 @@ const Certificate = ({
         <a
           href="https://confirm.udacity.com/DNMGJX5N"
           target="_blank"
-          className="px-5 py-3.5 bg-white text-gray-900 rounded-lg drop-shadow-sm"
+          className="px-5 py-3.5 bg-white text-gray-900 rounded-lg text-sm font-bold drop-shadow-sm"
         >
           See Certificate
         </a>

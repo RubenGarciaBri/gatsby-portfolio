@@ -4,6 +4,7 @@ import profilePicture from "../../images/newprofilepic.jpg";
 import SkillsAside from "../SkillsAside";
 import { sliderIcons } from "../../data/sliderIcons";
 import SectionLayout from "../SectionLayout/SectionLayout";
+import SectionHeading from "../SectionHeading/SectionHeading";
 
 const About = () => {
   return (
@@ -58,7 +59,7 @@ const About = () => {
           <SkillsAside />
         </div>
         <div className="self-start w-2/3">
-          <h2 className="mb-6 text-4xl font-bold">About Me</h2>
+          <SectionHeading>About Me</SectionHeading>
           <p className="mb-6 text-xl">
             As a Front-end Developer, my skills go from the most fundamental
             building blocks of the web to full-scale modern{" "}
