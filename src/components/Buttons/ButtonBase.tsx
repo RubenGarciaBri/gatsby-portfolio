@@ -4,13 +4,14 @@ import { Link } from "gatsby";
 interface IPropTypes {
   children: React.ReactNode;
   classNames?: string;
+  small?: boolean
 }
 
-const ButtonBase = ({ children, classNames }: IPropTypes) => {
+const ButtonBase = ({ children, classNames, small }: IPropTypes) => {
   return (
     <Link to="#section-5">
       <button
-        className={`px-8 py-4 font-bold rounded-lg drop-shadow-md ${
+        className={`${small ? "px-6 py-3" : "px-8 py-4"} font-bold rounded-lg drop-shadow-md ${
           classNames && classNames
         }`}
       >

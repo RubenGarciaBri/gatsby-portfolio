@@ -12,6 +12,7 @@ const TertiaryButton = ({ children, classNames }: IPropTypes) => {
       classNames={`bg-gradient-to-br from-gray-900 to-gray-800 text-white ${
         classNames && classNames
       }`}
+      small
     >
       {children}
     </ButtonBase>

@@ -11,6 +11,16 @@
 }
 
 p {
-  line-height: 2rem !important;
+  line-height: 1.85rem !important;
 }
 
+.hero-section {
+  background-size: cover!important;
+  background-repeat: no-repeat;
+  background: linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 0.75),
+      rgba(255, 255, 255, 0.75)
+    ),
+    url("../images/background.png");
+}

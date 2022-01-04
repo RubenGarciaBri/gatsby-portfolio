@@ -5,6 +5,7 @@ interface IPropTypes {
   children: React.ReactNode;
   classNames?: string;
   small?: boolean;
+  dark?: boolean;
 }
 
 const SectionLayout = ({
@@ -12,11 +13,12 @@ const SectionLayout = ({
   children,
   classNames,
   small,
+  dark,
 }: IPropTypes) => {
   return (
     <section
       id={sectionId}
-      className={`px-4 ${small ? "py-12" : "py-24"} ${
+      className={`px-4 ${small ? "py-12" : "py-24"} ${dark && "bg-gray-900"} ${
         classNames && classNames
       }`}
     >

@@ -30,7 +30,7 @@ const Project = ({
           />
         </Link>
       </div>
-      <div className={`${reversed ? "order-1 pr-10" : "order-2 pl-10"} w-1/2`}>
+      <div className={`${reversed ? "order-1 pr-24" : "order-2 pl-24"} w-1/2`}>
         <ProjectInfo title={title} badges={badges} description={description} />
       </div>
     </div>

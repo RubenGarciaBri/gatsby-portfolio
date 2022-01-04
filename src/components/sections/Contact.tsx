@@ -1,52 +1,42 @@
 import React from "react";
-import {
-  FaGithub,
-  FaLinkedin,
-  FaEnvelope,
-  FaMapMarkerAlt,
-  FaPhoneAlt,
-} from "react-icons/fa";
+
+import SectionHeading from "../SectionHeading/SectionHeading";
+import SectionLayout from "../SectionLayout/SectionLayout";
+import { contactData } from "../../data/contactData";
+import LinkedInButton from "../Buttons/LinkedInButton/LinkedInButton";
+import GithubButton from "../Buttons/GithubButton/GithubButton";
+import { Link } from "gatsby";
 
 const Contact = () => {
   return (
-    <section id="section-5" className="section-contact">
-      <div className="contact main-container shadow-s">
-        <div className="contact__left">
-          <h3 className="contact__left-heading">Let's get in touch</h3>
-          <p className="contact__left-subheading">
+    <SectionLayout dark sectionId="section-5">
+      <div className="flex p-12 bg-white main-container drop-shadow rounded-xl">
+        <div className="">
+          <SectionHeading dark>Let's talk</SectionHeading>
+          <p className="mb-5 text-lg">
             Contact me on the details below and I'll reply as soon as I can.
           </p>
-          <ul className="contact__left-list">
-            <li className="contact__left-list__item">
-              <FaEnvelope className="contact__left-list__item-icon" />
-              hello@rubengarciabri.me
-            </li>
-            <li className="contact__left-list__item">
-              <FaPhoneAlt className="contact__left-list__item-icon" />
-              +44 7563 872 989
-            </li>
-            <li className="contact__left-list__item">
-              <FaMapMarkerAlt className="contact__left-list__item-icon" />
-              Edinburgh, UK
-            </li>
+          <ul>
+            {contactData &&
+              contactData.map(({ value, Icon }) => {
+                return (
+                  <li className="flex items-center mb-2 gap-x-4">
+                    {Icon}
+                    <span className="text-lg">{value}</span>
+                  </li>
+                );
+              })}
           </ul>
-          <ul className="contact__left-social">
-            <li className="contact__left-social__item">
-              <a
-                href="https://www.linkedin.com/in/ruben-garcia-bri/"
-                target="_blank"
-              >
-                <FaLinkedin />
-              </a>
+          <ul className="flex gap-x-2">
+            <li>
+              <LinkedInButton />
             </li>
-            <li className="contact__left-social__item">
-              <a href="https://github.com/RubenGarciaBri" target="_blank">
-                <FaGithub />
-              </a>
+            <li>
+              <GithubButton />
             </li>
           </ul>
         </div>
-        <div className="contact__right">
+        <div className="">
           <form
             netlify
             method="POST"
@@ -81,12 +71,12 @@ const Contact = () => {
             <input
               type="submit"
               value="Send Message"
-              className="contact__right-form__btn shadow-xs"
+              className="shadow-xs contact__right-form__btn"
             />
           </form>
         </div>
       </div>
-    </section>
+    </SectionLayout>
   );
 };
 

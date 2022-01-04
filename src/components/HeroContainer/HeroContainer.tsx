@@ -13,7 +13,7 @@ interface IPropTypes {
 
 const HeroContainer = ({ heading, subHeading }: IPropTypes) => {
   return (
-    <div className="flex items-stretch mt-2 main-container justify-items-start">
+    <div className="flex items-stretch mt-16 main-container justify-items-start">
       <div className="w-1/2 pl-10">
         <h1 className="mt-16 mb-6 text-6xl font-bold">{heading}</h1>
         <p className="text-2xl font-semibold">{subHeading}</p>

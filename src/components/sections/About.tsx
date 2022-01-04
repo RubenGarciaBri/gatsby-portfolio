@@ -49,16 +49,15 @@ const About = () => {
           </div>
         </div>
       </div> */}
-      <div className="flex items-center justify-center mt-24 about main-container">
+      <div className="flex justify-center mt-24 about main-container">
         <div className="flex flex-col justify-center w-1/3">
           <img
             src={profilePicture}
-            className="w-7/12 mb-8 rounded-lg shadow-md"
+            className="w-64 mb-48 rounded-lg shadow-md"
             alt=""
           />
-          <SkillsAside />
         </div>
-        <div className="self-start w-2/3">
+        <div className="w-2/3">
           <SectionHeading>About Me</SectionHeading>
           <p className="mb-6 text-xl">
             As a Front-end Developer, my skills go from the most fundamental
