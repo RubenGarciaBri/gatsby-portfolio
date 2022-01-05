@@ -9,7 +9,7 @@ import { isOdd } from "../../utils/helpers";
 
 const Portfolio = () => {
   return (
-    <SectionLayout sectionId="section-4">
+    <SectionLayout sectionId="section-4" classNames="bg-gray-100">
       <div className="mb-24 text-center main-container">
         <SectionHeading dark>Portfolio</SectionHeading>
         {/* <p className="text-lg">

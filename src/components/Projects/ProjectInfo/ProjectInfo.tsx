@@ -12,7 +12,7 @@ interface IPropTypes {
 const ProjectInfo = ({ title, badges, description }: IPropTypes) => {
   return (
     <>
-      <h3 className="mb-3 text-2xl font-bold">{title}</h3>
+      <h3 className="mb-3 text-3xl font-bold">{title}</h3>
       <ul className="flex gap-x-2.5 mb-6">
         {badges &&
           badges.map((badge, index) => {
