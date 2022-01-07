@@ -5,6 +5,10 @@ import wyrImg from "../images/wyr-5.jpg";
 import contentfulImg from "../images/contentful-1.jpg";
 import flashcardsImg from "../images/flashcards-5.png";
 
+import testImg1 from "../images/project-sample-1.jpeg";
+import testImg2 from "../images/project-sample-2.jpeg";
+import testImg3 from "../images/project-sample-3.jpeg";
+
 import ExpressBadge from "../components/Badges/Express/ExpressBadge";
 import FirebaseBadge from "../components/Badges/Firebase/FirebaseBadge";
 import GatsbyBadge from "../components/Badges/Gatsby/GatsbyBadge";
@@ -20,7 +24,7 @@ import TailwindBadge from "../components/Badges/Tailwind/TailwindBadge";
 export const projectsData = [
   {
     title: "Readable - Full-Stack Social Media App",
-    image: readableImg,
+    image: testImg1,
     badges: [
       <ReactBadge />,
       <ReduxBadge />,
@@ -34,7 +38,7 @@ export const projectsData = [
   },
   {
     title: "Would You Rather Game",
-    image: wyrImg,
+    image: testImg2,
     badges: [<ReactBadge />, <ReduxBadge />, <ExpressBadge />],
     description: [
       "This is an online version of the classic 'Would you rather' game. In order to play, you can either create your own polls or answer any of the already open ones.",
@@ -43,7 +47,7 @@ export const projectsData = [
   },
   {
     title: "Gatsby Contentful Blog",
-    image: contentfulImg,
+    image: testImg3,
     badges: [<ReactBadge />, <GatsbyBadge />, <GraphQLBadge />],
     description: [
       "This project is a fictional personal blog that uses the static site generator Gatsby and Contentful as a headless CMS.",

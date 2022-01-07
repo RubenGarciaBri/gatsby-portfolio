@@ -1,7 +1,7 @@
 import React from "react";
 
 import { Link } from "gatsby";
-import ProjectInfo from "../../Projects/ProjectInfo/ProjectInfo";
+import TertiaryButton from "../../Buttons/TertiaryButton/TertiaryButton";
 
 interface IPropTypes {
   title: string;
@@ -20,18 +20,36 @@ const Project = ({
   reversed,
 }: IPropTypes) => {
   return (
-    <div className="flex justify-center drop-shadow-xl">
-      <div className={`${reversed ? "order-2" : "order-1"} w-1/2`}>
+    <div className="small-container">
+      <div className="p-8 bg-white drop-shadow-xl rounded-3xl project">
         <Link to="/">
           <img
             src={image}
-            className="hidden w-3/4 w-full md:block"
+            className="w-full rounded-3xl "
             alt="Ruben's profile picture"
           />
         </Link>
-      </div>
-      <div className={`${reversed ? "order-1 pr-24" : "order-2 pl-24"} w-1/2`}>
-        <ProjectInfo title={title} badges={badges} description={description} />
+        <div className="flex px-8 pt-12 pb-3">
+          <div className="w-3/4">
+            <h3 className="mb-4 text-4xl font-semibold">{title}</h3>
+            <ul className="flex gap-x-2.5 mb-7">
+              {badges &&
+                badges.map((badge, index) => {
+                  return <li key={index}>{badge}</li>;
+                })}
+            </ul>
+            {description &&
+              description.map((paragraph, index) => {
+                return (
+                  <p key={index} className="mb-4 text-lg">
+                    {paragraph}
+                  </p>
+                );
+              })}
+            <TertiaryButton classNames="mt-5">See Project</TertiaryButton>
+          </div>
+          <div className="w-1/4"></div>
+        </div>
       </div>
     </div>
   );

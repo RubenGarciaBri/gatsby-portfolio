@@ -8,9 +8,9 @@ import { isOdd } from "../utils/helpers";
 
 const Portfolio = () => {
   return (
-    <SectionLayout sectionId="section-4" classNames="bg-gray-100">
+    <SectionLayout sectionId="section-4" classNames="">
       <div className="mb-24 text-center main-container">
-        <SectionHeading dark>Portfolio</SectionHeading>
+        <SectionHeading centered>Portfolio</SectionHeading>
         {/* <p className="text-lg">
           These are all my current published projects. Click on the thumbnails
           to see a full description as well as links to both the github
@@ -18,7 +18,7 @@ const Portfolio = () => {
         </p> */}
       </div>
 
-      <div className="flex flex-col main-container gap-y-60">
+      <div className="flex flex-col main-container gap-y-48">
         {projectsData &&
           projectsData.map(({ title, image, badges, description }, index) => {
             return (

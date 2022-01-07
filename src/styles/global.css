@@ -40,6 +40,11 @@ p {
   height: 3px;
 }
 
+.small-container {
+  max-width: 1150px;
+  margin: 0 auto;
+}
+
 /* .profile-img {
   -webkit-box-shadow: -12px 12px 0px 5px #333;
   box-shadow: -12px 12px 0px 5px #333;
