@@ -3,8 +3,8 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        'hero-pattern': "url('/src/images/background.png')",
-      }
+        "hero-pattern": "url('/src/images/background.png')",
+      },
     },
   },
   plugins: [],

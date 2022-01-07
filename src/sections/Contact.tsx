@@ -1,10 +1,10 @@
 import React from "react";
 
-import SectionHeading from "../SectionHeading/SectionHeading";
-import SectionLayout from "../SectionLayout/SectionLayout";
-import { contactData } from "../../data/contactData";
-import LinkedInButton from "../Buttons/LinkedInButton/LinkedInButton";
-import GithubButton from "../Buttons/GithubButton/GithubButton";
+import SectionHeading from "../components/SectionHeading/SectionHeading";
+import SectionLayout from "..//components/SectionLayout/SectionLayout";
+import { contactData } from "../data/contactData";
+import LinkedInButton from "../components/Buttons/LinkedInButton/LinkedInButton";
+import GithubButton from "../components/Buttons/GithubButton/GithubButton";
 import { Link } from "gatsby";
 
 const Contact = () => {

@@ -7,14 +7,40 @@
 }
 
 .main-container {
-  @apply max-w-screen-xl mx-auto;
+  max-width: 1400px;
+  margin: 0 auto;
 }
 
-p {
-  line-height: 1.85rem !important;
+html,
+body {
+  font-family: "Nunito Sans", sans-serif;
 }
 
-.hero-section {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Source Sans Pro", sans-serif;
+  @apply text-gray-900;
+}
+
+p,
+a {
+  @apply text-gray-900 leading-snug;
+}
+
+.logo {
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+/* .profile-img {
+  -webkit-box-shadow: -12px 12px 0px 5px #333;
+  box-shadow: -12px 12px 0px 5px #333;
+} */
+
+/* .hero-section {
   background-size: cover!important;
   background-repeat: no-repeat;
   background: linear-gradient(
@@ -23,4 +49,4 @@ p {
       rgba(255, 255, 255, 0.75)
     ),
     url("../images/background.png");
-}
+} */

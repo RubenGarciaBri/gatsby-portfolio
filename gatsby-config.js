@@ -68,8 +68,8 @@ module.exports = {
       resolve: `gatsby-plugin-google-fonts`,
       options: {
         fonts: [
-          `roboto mono`,
-          `source sans pro\:300,400,400i,700`, // you can also specify font weights and styles
+          `Nunito Sans\:300,400,600,700`,
+          `Source Sans Pro\:300,400,600,700`, // you can also specify font weights and styles
         ],
         display: "swap",
       },

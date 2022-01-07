@@ -11,7 +11,7 @@ const Link = ({ title, sectionLink, classNames }: IPropTypes) => {
     <li className={classNames && classNames}>
       <a
         href={sectionLink}
-        className="px-2 py-2 mr-4 text-xl font-bold tracking-wide hover:text-blue-500"
+        className="px-2 py-2 mr-8 text-xl font-semibold tracking-wide hover:text-blue-500"
       >
         {title}
       </a>

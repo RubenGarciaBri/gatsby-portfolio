@@ -4,15 +4,19 @@ export const navData = [
     sectionLink: "#section-2",
   },
   {
-    title: "Certificates",
+    title: "Portfolio",
     sectionLink: "#section-3",
   },
   {
-    title: "Portfolio",
+    title: "Experience",
     sectionLink: "#section-4",
   },
   {
-    title: "Contact",
+    title: "Certificates",
     sectionLink: "#section-5",
+  },
+  {
+    title: "Contact",
+    sectionLink: "#section-6",
   },
 ];

@@ -13,30 +13,37 @@ interface IPropTypes {
 
 const HeroContainer = ({ heading, subHeading }: IPropTypes) => {
   return (
-    <div className="flex items-stretch mt-16 main-container justify-items-start">
-      <div className="w-1/2 pl-10">
-        <h1 className="mt-16 mb-6 text-6xl font-bold">{heading}</h1>
-        <p className="text-2xl font-semibold">{subHeading}</p>
-        <ul className="flex">
-          <li className="mr-2">
-            <LinkedInButton />
-          </li>
-          <li>
-            <GithubButton />
-          </li>
-        </ul>
-        <div className="flex gap-x-4">
-          <PrimaryButton />
-          <SecondaryButton />
+    <div className="main-container">
+      <div className="flex items-stretch mt-32 mb-52 justify-items-start">
+        <div className="w-3/5 ">
+          <h3 className="mb-4 text-2xl font-semibold text-gray-500 subheading">
+            {subHeading}
+          </h3>
+          <h1 className="mb-3 font-semibold leading-tight text-7xl ">
+            A <span className="font-bold text-blue-500">React Developer</span>{" "}
+            with passion for the new web technologies
+          </h1>
+          <ul className="flex mb-12">
+            <li className="mr-3">
+              <LinkedInButton size={34} />
+            </li>
+            <li>
+              <GithubButton size={34} />
+            </li>
+          </ul>
+          <div className="flex mt-1 gap-x-6">
+            <PrimaryButton />
+            <SecondaryButton />
+          </div>
         </div>
-      </div>
-      <div className="w-1/2">
-        <StaticImage
-          placeholder="blurred"
-          src="../../images/prof3.png"
-          className="hidden w-3/4 md:block"
-          alt="Ruben's profile picture"
-        />
+        <div className="w-2/5">
+          <StaticImage
+            placeholder="blurred"
+            src="../../images/side-2.png"
+            className="hidden w-full bg-gray-200 rounded-full shadow-inner md:block profile-img"
+            alt="Ruben's profile picture"
+          />
+        </div>
       </div>
     </div>
   );

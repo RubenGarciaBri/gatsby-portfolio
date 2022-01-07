@@ -8,6 +8,7 @@ const ProjectDetails = ({ data }) => {
   return (
     <div>
       <Header />
+      <div className=""></div>
     </div>
   );
 };

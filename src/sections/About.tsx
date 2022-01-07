@@ -1,10 +1,10 @@
 import React from "react";
 
-import profilePicture from "../../images/newprofilepic.jpg";
-import SkillsAside from "../SkillsAside";
-import { sliderIcons } from "../../data/sliderIcons";
-import SectionLayout from "../SectionLayout/SectionLayout";
-import SectionHeading from "../SectionHeading/SectionHeading";
+import profilePicture from "../images/newprofilepic.jpg";
+import SkillsAside from "../components/SkillsAside";
+import { sliderIcons } from "../data/sliderIcons";
+import SectionLayout from "../components/SectionLayout/SectionLayout";
+import SectionHeading from "../components/SectionHeading/SectionHeading";
 
 const About = () => {
   return (

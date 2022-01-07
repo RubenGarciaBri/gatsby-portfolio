@@ -1,5 +1,4 @@
 export const heroData = {
-  heading: "Ruben Garcia",
-  subHeading:
-    "Front-end React Developer based in London, UK. Proficient with HTML, CSS, Modern ES6 Javascript and React/Redux.",
+  subHeading: "Hi, I'm Ruben Garcia",
+  heading: "A React Developer with passion for the new web technologies",
 };

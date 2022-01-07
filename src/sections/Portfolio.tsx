@@ -1,11 +1,10 @@
 import React from "react";
 
-import SectionLayout from "../SectionLayout/SectionLayout";
-import Gallery from "../Gallery";
-import SectionHeading from "../SectionHeading/SectionHeading";
-import Project from "../Projects/Project/Project";
-import { projectsData } from "../../data/projectsData";
-import { isOdd } from "../../utils/helpers";
+import SectionLayout from "../components/SectionLayout/SectionLayout";
+import SectionHeading from "../components/SectionHeading/SectionHeading";
+import Project from "../components/Projects/Project/Project";
+import { projectsData } from "../data/projectsData";
+import { isOdd } from "../utils/helpers";
 
 const Portfolio = () => {
   return (

@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import { Link } from "gatsby";
 import { FaCode, FaBars } from "react-icons/fa";
 import { useOutsideClick } from "../utils/useOutsideClick";
-import NavBar from "./layout/NavBar/NavBar";
+import NavBar from "./Layout/NavBar/NavBar";
 
 const Header = ({ siteTitle }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);

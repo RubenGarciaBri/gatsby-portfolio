@@ -1,9 +1,9 @@
 import React from "react";
 
-import SectionLayout from "../SectionLayout/SectionLayout";
-import Certificate from "../Certificate/Certificate";
-import { certificatesData } from "../../data/certificatesData";
-import SectionHeading from "../SectionHeading/SectionHeading";
+import SectionLayout from "../components/SectionLayout/SectionLayout";
+import Certificate from "../components/Certificate/Certificate";
+import { certificatesData } from "../data/certificatesData";
+import SectionHeading from "../components/SectionHeading/SectionHeading";
 
 const Certificates = () => {
   return (

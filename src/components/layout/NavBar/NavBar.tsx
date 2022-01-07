@@ -1,15 +1,18 @@
 import React from "react";
 import { FaCode, FaBars } from "react-icons/fa";
-import Links from "./Links";
+import Links from "../../Layout/Links/Links";
 import { navData } from "../../../data/navData";
 
 const Navbar = () => {
   return (
-    <nav className="z-50 py-3 navbar">
-      <div className="flex items-center justify-between main-container">
+    <nav className="z-50 py-6 navbar">
+      <div className="flex items-center justify-between px-8">
         <div className="logo-box">
-          <a href="#section-1" className="">
-            <FaCode className="mr-40 text-6xl" />
+          <a
+            href="#section-1"
+            className="flex text-5xl font-bold text-gray-900 logo"
+          >
+            RG
           </a>
         </div>
         <Links navLinks={navData} />

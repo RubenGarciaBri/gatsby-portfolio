@@ -2,10 +2,10 @@ import React from "react";
 
 // import profilePicture from "../../images/prof3.png";
 
-import Header from "../header";
-import HeroContainer from "../HeroContainer/HeroContainer";
-import SectionLayout from "../SectionLayout/SectionLayout";
-import { heroData } from "../../data/heroData";
+import Header from "../components/header";
+import HeroContainer from "../components/HeroContainer/HeroContainer";
+import SectionLayout from "../components/SectionLayout/SectionLayout";
+import { heroData } from "../data/heroData";
 
 const Hero = () => {
   const { heading, subHeading } = heroData;
