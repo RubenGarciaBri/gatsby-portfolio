@@ -26,13 +26,18 @@ h6 {
   @apply text-gray-900;
 }
 
-p,
-a {
-  @apply text-gray-900 leading-snug;
+p {
+  line-height: 2.25rem !important;
+  @apply text-gray-600;
 }
 
 .logo {
   font-family: "Source Sans Pro", sans-serif;
+}
+
+.divider {
+  @apply bg-blue-500 w-24;
+  height: 3px;
 }
 
 /* .profile-img {

@@ -18,7 +18,7 @@ const Certificate = ({
   url,
 }: IPropTypes) => {
   return (
-    <div className="flex px-12 py-16 text-white bg-blue-500 rounded-lg drop-shadow-xl">
+    <div className="flex px-12 py-20 my-16 text-white bg-blue-500 rounded-lg drop-shadow-xl">
       <div className="flex">
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -32,19 +32,24 @@ const Certificate = ({
           />
         </svg>
       </div>
-      <div className="">
-        <h4 className="text-xl ">{school}</h4>
-        <h5 className="mb-1 text-xl font-bold">
+      <div className="pr-24">
+        <h4 className="mb-2 text-2xl font-semibold text-gray-900">{school}</h4>
+        <h5 className="mb-1 text-2xl font-semibold text-gray-900 ">
           <i className="fas fa-code"></i> {name}
         </h5>
-        <p className="pb-1 mb-4 border-b border-blue-300">{duration}</p>
-        <p className="text-lg">{description}</p>
-        <p className="mt-4 mb-1 text-xl font-bold"> Course Programme:</p>
-        <p className="mb-6 text-lg">{subjects}</p>
+        <p className="pb-1 mb-4 text-lg text-white border-b-2 border-blue-300">
+          {duration}
+        </p>
+        <p className="text-xl text-white">{description}</p>
+        <p className="mt-4 mb-1 text-xl font-semibold text-gray-900">
+          {" "}
+          Course Programme:
+        </p>
+        <p className="mb-10 text-xl text-white">{subjects}</p>
         <a
           href="https://confirm.udacity.com/DNMGJX5N"
           target="_blank"
-          className="px-5 py-3.5 bg-white text-gray-900 rounded-lg text-sm font-bold drop-shadow-sm"
+          className="px-5 py-3.5 bg-white text-gray-900 rounded-lg font-bold drop-shadow-sm"
         >
           See Certificate
         </a>

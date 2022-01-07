@@ -7,9 +7,9 @@ import SectionHeading from "../components/SectionHeading/SectionHeading";
 
 const Certificates = () => {
   return (
-    <SectionLayout sectionId="section-3" classNames="bg-blue-600">
+    <SectionLayout sectionId="section-3" classNames="">
       <div className="text-center main-container">
-        <SectionHeading>Certificates</SectionHeading>
+        <SectionHeading centered>Certificates</SectionHeading>
       </div>
       <div className="flex flex-col gap-y-16 main-container">
         {certificatesData &&

@@ -24,11 +24,11 @@ const HeroContainer = ({ heading, subHeading }: IPropTypes) => {
             with passion for the new web technologies
           </h1>
           <ul className="flex mb-12">
-            <li className="mr-3">
-              <LinkedInButton size={34} />
+            <li className="mr-4">
+              <LinkedInButton size={36} />
             </li>
             <li>
-              <GithubButton size={34} />
+              <GithubButton size={36} />
             </li>
           </ul>
           <div className="flex mt-1 gap-x-6">

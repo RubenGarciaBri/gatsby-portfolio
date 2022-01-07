@@ -8,12 +8,8 @@ export const navData = [
     sectionLink: "#section-3",
   },
   {
-    title: "Experience",
-    sectionLink: "#section-4",
-  },
-  {
-    title: "Certificates",
-    sectionLink: "#section-5",
+    title: "Blog",
+    sectionLink: "#section-6",
   },
   {
     title: "Contact",

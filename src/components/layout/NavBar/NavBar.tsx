@@ -1,11 +1,11 @@
 import React from "react";
 import { FaCode, FaBars } from "react-icons/fa";
-import Links from "../../Layout/Links/Links";
+import Links from "../Links/Links";
 import { navData } from "../../../data/navData";
 
 const Navbar = () => {
   return (
-    <nav className="z-50 py-6 navbar">
+    <nav className="z-50 py-5 navbar">
       <div className="flex items-center justify-between px-8">
         <div className="logo-box">
           <a
