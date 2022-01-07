@@ -5,6 +5,7 @@ import SkillsAside from "../components/SkillsAside";
 import SectionLayout from "../components/SectionLayout/SectionLayout";
 import SectionHeading from "../components/SectionHeading/SectionHeading";
 import Carousel from "../components/Carousel/Carousel";
+import TertiaryButton from "../components/Buttons/TertiaryButton/TertiaryButton";
 
 const About = () => {
   return (
@@ -39,14 +40,15 @@ const About = () => {
             <b>beautifully designed user interfaces</b> that provide a great
             user experience.
           </p>
-          <p className="text-xl">
+          <p className="mb-8 text-xl">
             My long-term goal is to{" "}
             <b>improve people's lives through technology</b> and make this world
             a better place. I believe writing code is the way to go.
           </p>
+          <TertiaryButton>Download CV</TertiaryButton>
         </div>
       </div>
-      <Carousel classNames="mt-28" />
+      <Carousel classNames="mt-32" />
     </SectionLayout>
   );
 };

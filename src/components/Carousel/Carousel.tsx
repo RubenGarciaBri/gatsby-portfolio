@@ -10,7 +10,7 @@ const Carousel = ({ classNames }: IPropTypes) => {
   return (
     <div className="main-container">
       <div
-        className={`px-16 drop-shadow-xl py-10 bg-gray-900 rounded-xl flex flex-wrap justify-between px-4  mx-auto text-center slider ${
+        className={`px-20 drop-shadow-2xl py-14 bg-gray-900 rounded-3xl flex flex-wrap justify-between mx-auto text-center slider ${
           classNames && classNames
         }`}
       >

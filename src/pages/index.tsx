@@ -12,8 +12,8 @@ const IndexPage = () => (
   <>
     <Hero />
     <About />
-    <Certificates />
     <Portfolio />
+    <Certificates />
     <Contact />
   </>
 

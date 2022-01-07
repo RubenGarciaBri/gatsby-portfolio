@@ -18,7 +18,7 @@ const SectionLayout = ({
   return (
     <section
       id={sectionId}
-      className={`px-4 ${small ? "py-12" : "py-24"} ${dark && "bg-gray-900"} ${
+      className={`px-6 ${small ? "py-12" : "py-24"} ${dark && "bg-gray-900"} ${
         classNames && classNames
       }`}
     >

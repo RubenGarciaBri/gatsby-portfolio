@@ -21,7 +21,7 @@ const Project = ({
 }: IPropTypes) => {
   return (
     <div className="small-container">
-      <div className="p-8 bg-white drop-shadow-xl rounded-3xl project">
+      <div className="p-8 bg-white drop-shadow-2xl rounded-3xl project">
         <Link to="/">
           <img
             src={image}
