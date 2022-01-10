@@ -1,6 +1,6 @@
 import React from "react";
 import { FaCode, FaBars } from "react-icons/fa";
-import Links from "../Links/Links";
+import Links from "./Links/Links";
 import { navData } from "../../../data/navData";
 
 const Navbar = () => {

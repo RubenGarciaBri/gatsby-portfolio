@@ -1,0 +1,38 @@
+import * as React from "react";
+
+import { RiGatsbyLine } from "react-icons/ri";
+import { navData } from "../../../data/navData";
+import { socialLinksData } from "../../../data/socialLinksData";
+
+const Footer = () => {
+  return (
+    <footer className="mt-24">
+      <div className="w-3/5 px-6 pt-16 pb-10 border-t-2 border-gray-200 main-container">
+        <ul className="flex justify-center mb-10 text-xl text-gray-400 gap-x-24">
+          {navData &&
+            navData.map(({ title }) => {
+              return <li className="">{title}</li>;
+            })}
+        </ul>
+        <ul className="flex justify-center mb-8 text-gray-400 gap-x-8">
+          {socialLinksData &&
+            socialLinksData.map(({ name, url, Icon }) => {
+              return (
+                <li className="p-3 text-2xl text-white duration-200 bg-gray-300 rounded-full hover:bg-blue-500">
+                  {Icon}
+                </li>
+              );
+            })}
+        </ul>
+        <p className="flex items-center justify-center text-center text-gray-400">
+          <span>
+            Built by Ruben Garcia with <strong>Gatsby</strong>
+          </span>
+          <RiGatsbyLine className="ml-1" />
+        </p>
+      </div>
+    </footer>
+  );
+};
+
+export default Footer;

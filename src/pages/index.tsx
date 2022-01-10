@@ -7,6 +7,7 @@ import Certificates from "../sections/Certificates";
 import Portfolio from "../sections/Portfolio";
 import Contact from "../sections/Contact";
 import Experience from "../sections/Experience";
+import Footer from "../components/Layout/Footer/Footer";
 import Seo from "../components/seo";
 
 const IndexPage = () => (
@@ -14,9 +15,10 @@ const IndexPage = () => (
     <Hero />
     <About />
     <Portfolio />
-    <Certificates />
     <Experience />
+    <Certificates />
     <Contact />
+    <Footer />
   </>
 
   // <Seo title="Home" />

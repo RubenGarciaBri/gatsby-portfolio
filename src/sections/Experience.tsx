@@ -23,7 +23,7 @@ const Experience = () => {
           <TimelineDate>September 2021 - Present</TimelineDate>
           <TimelineCard
             companyImg={behaviourLabImg}
-            companyName="BehaviourLab"
+            companyName="Behaviour Lab"
             jobTitle="Frontend Engineer"
             location="London, UK"
             techStack={getTechIcons(["react", "next", "typescript", "d3"])}
