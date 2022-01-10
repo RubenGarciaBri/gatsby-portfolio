@@ -1,10 +1,15 @@
 import React from "react";
+
 import ButtonBase from "../ButtonBase";
 
-const SecondaryButton = () => {
+interface IPropTypes {
+  children: React.ReactNode;
+}
+
+const SecondaryButton = ({ children }: IPropTypes) => {
   return (
     <ButtonBase classNames="bg-gradient-to-br from-gray-900 to-gray-800 text-white">
-      See My Work
+      {children}
     </ButtonBase>
   );
 };

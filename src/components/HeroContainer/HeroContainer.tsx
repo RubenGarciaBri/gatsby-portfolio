@@ -32,8 +32,8 @@ const HeroContainer = ({ heading, subHeading }: IPropTypes) => {
             </li>
           </ul>
           <div className="flex mt-1 gap-x-6">
-            <PrimaryButton />
-            <SecondaryButton />
+            <PrimaryButton>Let's Talk</PrimaryButton>
+            <SecondaryButton>See My Work</SecondaryButton>
           </div>
         </div>
         <div className="w-2/5">
