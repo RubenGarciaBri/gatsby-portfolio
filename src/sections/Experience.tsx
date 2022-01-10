@@ -2,7 +2,8 @@ import * as React from "react";
 
 import behaviourLabImg from "../images/bl-logo.jpeg";
 import { getTechIcons } from "../utils/helpers";
-import SectionHeading from "../components/SectionHeading/SectionHeading";
+import SectionHeadingPrimary from "../components/SectionHeading/Primary/SectionHeadingPrimary";
+import SectionHeadingSecondary from "../components/SectionHeading/Secondary/SectionHeadingSecondary";
 import SectionLayout from "../components/SectionLayout/SectionLayout";
 import TimelineBar from "../components/Timeline/TimelineBar/TimelineBar";
 import TimelinePoint from "../components/Timeline/TimelinePoint/TimelinePoint";
@@ -13,7 +14,8 @@ const Experience = () => {
   return (
     <SectionLayout sectionId="section-5">
       <div className="text-center main-container">
-        <SectionHeading center>Experience</SectionHeading>
+        <SectionHeadingSecondary>Experience</SectionHeadingSecondary>
+        <SectionHeadingPrimary center>Job History</SectionHeadingPrimary>
       </div>
       <div className="main-container">
         <TimelineBar>
@@ -26,10 +28,10 @@ const Experience = () => {
             location="London, UK"
             techStack={getTechIcons(["react", "next", "typescript", "d3"])}
           >
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio
-            similique eum illum et doloremque obcaecati assumenda tempora
-            repudiandae officia veniam. Sed illo facilis soluta distinctio?
-            Beatae aliquid harum deleniti similique?
+            Co-developing the Front-end of a Fintech SaaS platform that helps
+            asset managers, private equity firms, insurance companies and
+            executive boards make better financial decisions through analytics
+            and behavioural science.
           </TimelineCard>
         </TimelineBar>
       </div>

@@ -3,9 +3,11 @@ import React from "react";
 import { StaticImage } from "gatsby-plugin-image";
 import SkillsAside from "../components/SkillsAside";
 import SectionLayout from "../components/SectionLayout/SectionLayout";
-import SectionHeading from "../components/SectionHeading/SectionHeading";
+import SectionHeading from "../components/SectionHeading/Primary/SectionHeadingPrimary";
 import Carousel from "../components/Carousel/Carousel";
 import TertiaryButton from "../components/Buttons/TertiaryButton/TertiaryButton";
+import SectionHeadingPrimary from "../components/SectionHeading/Primary/SectionHeadingPrimary";
+import SectionHeadingSecondary from "../components/SectionHeading/Secondary/SectionHeadingSecondary";
 
 const About = () => {
   return (
@@ -19,28 +21,20 @@ const About = () => {
           />
         </div>
         <div className="w-2/3 pl-20">
-          <SectionHeading>About Me</SectionHeading>
+          <SectionHeadingSecondary>About Me</SectionHeadingSecondary>
+          <SectionHeadingPrimary>Hey there!</SectionHeadingPrimary>
           <p className="mb-8 text-xl">
-            As a Front-end Developer, my skills go from the most fundamental
-            building blocks of the web to full-scale modern{" "}
-            <b>single-page applications</b>. I specialise in React and I'm
-            competent using Redux and the latest ES6+ features. I'm also
-            familiar with the most popular
-            <b>web tools</b> such as Webpack, Babel, NPM, Git, etc.
+            I'm a Frontend Developer living in London, UK. I specialise in React
+            and I'm currently part of the engineering team at Behaviour Lab, a
+            fintech startup based in the capital.
           </p>
           <p className="mb-8 text-xl">
-            On top of that,{" "}
-            <b>
-              I feel confident working with API's as well as writing asyncronous
-              code
-            </b>
-            . I know the basics of Node and Express, including how to deploy
-            apps to platforms such as Heroku. Not only I'm passionate about
-            programming, but I also enjoy creating
-            <b>beautifully designed user interfaces</b> that provide a great
-            user experience.
+            I'm passionate about software and the latest web technologies. I'm
+            currently spending most of my time writing scalable, efficient
+            production-ready code with React, Redux and NextJS. Some other areas I'm
+            experimenting with are the JAM stack and serverless apps.
           </p>
-          <p className="mb-8 text-xl">
+          <p className="mb-12 text-xl">
             My long-term goal is to{" "}
             <b>improve people's lives through technology</b> and make this world
             a better place. I believe writing code is the way to go.

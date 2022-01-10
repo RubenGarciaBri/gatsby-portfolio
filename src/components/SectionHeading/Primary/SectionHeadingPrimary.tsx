@@ -1,6 +1,6 @@
 import * as React from "react";
 
-import Divider from "../Divider/Divider";
+import Divider from "../../Divider/Divider";
 
 interface IPropTypes {
   children: React.ReactNode;
@@ -8,7 +8,7 @@ interface IPropTypes {
   center?: boolean;
 }
 
-const SectionHeading = ({ children, light, center }: IPropTypes) => {
+const SectionHeadingPrimary = ({ children, light, center }: IPropTypes) => {
   return (
     <>
       <h2
@@ -18,9 +18,9 @@ const SectionHeading = ({ children, light, center }: IPropTypes) => {
       >
         {children}
       </h2>
-      <div className={`mb-12 divider ${center && "mx-auto"}`}></div>
+      <Divider center={center ? center : false} />
     </>
   );
 };
 
-export default SectionHeading;
+export default SectionHeadingPrimary;

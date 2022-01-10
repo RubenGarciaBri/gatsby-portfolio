@@ -1,6 +1,7 @@
 import React from "react";
 
-import SectionHeading from "../components/SectionHeading/SectionHeading";
+import SectionHeadingPrimary from "../components/SectionHeading/Primary/SectionHeadingPrimary";
+import SectionHeadingSecondary from "../components/SectionHeading/Secondary/SectionHeadingSecondary";
 import SectionLayout from "..//components/SectionLayout/SectionLayout";
 import { contactData } from "../data/contactData";
 import LinkedInButton from "../components/Buttons/LinkedInButton/LinkedInButton";
@@ -13,7 +14,7 @@ const Contact = () => {
     <SectionLayout sectionId="section-5">
       <div className="flex p-12 bg-gray-900 main-container drop-shadow rounded-xl">
         <div className="w-1/2">
-          <SectionHeading light>Let's talk</SectionHeading>
+          <SectionHeadingPrimary light>Let's talk</SectionHeadingPrimary>
           <p className="mb-5 text-lg text-white">
             Contact me on the details below and I'll reply as soon as I can.
           </p>

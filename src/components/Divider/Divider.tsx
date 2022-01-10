@@ -1,7 +1,11 @@
 import * as React from "react";
 
-const Divider = () => {
-  return <div className="divider"></div>;
+interface IPropTypes {
+  center?: boolean;
+}
+
+const Divider = ({ center }: IPropTypes) => {
+  return <div className={`mb-12 divider ${center && "mx-auto"}`}></div>;
 };
 
 export default Divider;

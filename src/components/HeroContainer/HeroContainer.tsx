@@ -15,8 +15,8 @@ const HeroContainer = ({ heading, subHeading }: IPropTypes) => {
   return (
     <div className="main-container">
       <div className="flex items-stretch mt-32 mb-52 justify-items-start">
-        <div className="w-3/5 ">
-          <h3 className="mb-4 text-2xl font-semibold text-gray-500 subheading">
+        <div className="w-3/5 mr-8 ">
+          <h3 className="mb-4 text-2xl font-semibold text-gray-400 subheading">
             {subHeading}
           </h3>
           <h1 className="mb-3 font-semibold leading-tight text-7xl ">
