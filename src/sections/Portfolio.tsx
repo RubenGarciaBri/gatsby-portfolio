@@ -11,7 +11,7 @@ const Portfolio = () => {
   return (
     <SectionLayout sectionId="section-4" classNames="">
       <div className="mb-24 text-center main-container">
-      <SectionHeadingSecondary>Portfolio</SectionHeadingSecondary>
+        <SectionHeadingSecondary>Portfolio</SectionHeadingSecondary>
         <SectionHeadingPrimary center>Recent Projects</SectionHeadingPrimary>
         {/* <p className="text-lg">
           These are all my current published projects. Click on the thumbnails

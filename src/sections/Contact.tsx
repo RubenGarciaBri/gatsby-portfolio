@@ -12,11 +12,11 @@ import Form from "../components/Form/Form";
 const Contact = () => {
   return (
     <SectionLayout sectionId="section-5">
-      <div className="flex items-center p-12 gap-x-12 main-container rounded-xl">
+      <div className="relative flex items-center gap-x-12 main-container">
         <div className="w-1/2">
           <SectionHeadingSecondary>Contact</SectionHeadingSecondary>
           <SectionHeadingPrimary>Let's talk</SectionHeadingPrimary>
-          <p className="text-2xl ">
+          <p className="text-2xl">
             Want to get in touch? Contact me on the details below.
           </p>
           <p className="mb-12 text-2xl "></p>
@@ -25,9 +25,9 @@ const Contact = () => {
             {contactData &&
               contactData.map(({ value, Icon }) => {
                 return (
-                  <li className="flex items-center mb-4 gap-x-5">
+                  <li className="flex items-center mb-5 gap-x-5">
                     {Icon}
-                    <span className="text-2xl font-light">{value}</span>
+                    <span className="text-2xl text-gray-600">{value}</span>
                   </li>
                 );
               })}
@@ -41,7 +41,7 @@ const Contact = () => {
             </li>
           </ul>
         </div>
-        <div className="w-1/2">
+        <div className="flex justify-center w-1/2">
           <Form />
         </div>
       </div>

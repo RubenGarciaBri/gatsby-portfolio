@@ -31,8 +31,8 @@ const About = () => {
           <p className="mb-8 text-xl">
             I'm passionate about software and the latest web technologies. I'm
             currently spending most of my time writing scalable, efficient
-            production-ready code with React, Redux and NextJS. Some other areas I'm
-            experimenting with are the JAM stack and serverless apps.
+            production-ready code with React, Redux and NextJS. Some other areas
+            I'm experimenting with are the JAM stack and serverless apps.
           </p>
           <p className="mb-12 text-xl">
             My long-term goal is to{" "}

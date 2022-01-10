@@ -36,7 +36,7 @@ p {
 }
 
 .divider {
-  @apply bg-blue-500 w-24;
+  @apply bg-blue-500 w-20;
   height: 3px;
 }
 
