@@ -12,29 +12,32 @@ import Form from "../components/Form/Form";
 const Contact = () => {
   return (
     <SectionLayout sectionId="section-5">
-      <div className="flex p-12 bg-gray-900 main-container drop-shadow rounded-xl">
+      <div className="flex items-center p-12 gap-x-12 main-container rounded-xl">
         <div className="w-1/2">
-          <SectionHeadingPrimary light>Let's talk</SectionHeadingPrimary>
-          <p className="mb-5 text-lg text-white">
-            Contact me on the details below and I'll reply as soon as I can.
+          <SectionHeadingSecondary>Contact</SectionHeadingSecondary>
+          <SectionHeadingPrimary>Let's talk</SectionHeadingPrimary>
+          <p className="text-2xl ">
+            Want to get in touch? Contact me on the details below.
           </p>
-          <ul>
+          <p className="mb-12 text-2xl "></p>
+
+          <ul className="mb-6">
             {contactData &&
               contactData.map(({ value, Icon }) => {
                 return (
-                  <li className="flex items-center mb-2 text-white gap-x-4">
+                  <li className="flex items-center mb-4 gap-x-5">
                     {Icon}
-                    <span className="text-lg">{value}</span>
+                    <span className="text-2xl font-light">{value}</span>
                   </li>
                 );
               })}
           </ul>
-          <ul className="flex text-white gap-x-2">
+          <ul className="flex text-white gap-x-4">
             <li>
-              <LinkedInButton />
+              <LinkedInButton size={36} />
             </li>
             <li>
-              <GithubButton />
+              <GithubButton size={36} />
             </li>
           </ul>
         </div>

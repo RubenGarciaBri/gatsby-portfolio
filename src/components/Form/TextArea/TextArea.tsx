@@ -29,8 +29,8 @@ const TextArea = ({
       placeholder={placeholder}
       id={id}
       cols={cols ? cols : 3}
-      rows={rows ? rows : 3}
-      className={`p-5 text-xl bg-gray-200 rounded-lg resize-none ${
+      rows={rows ? rows : 5}
+      className={`p-5 text-xl rounded-lg resize-none ${
         classNames && classNames
       }`}
       onChange={e => onChange(e.target.value)}

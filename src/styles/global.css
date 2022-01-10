@@ -46,13 +46,13 @@ p {
 }
 
 .contact-form {
-  width: 500px;
+  width: 550px;
 }
 
 .input-icon {
   position: absolute;
   top: 20px;
-  left: 19px;
+  left: 18px;
   font-size: 18px;
 }
 
@@ -61,5 +61,5 @@ p {
 }
 
 .timeline-card {
-  width: 620px; 
+  width: 620px;
 }

@@ -6,16 +6,16 @@ export const contactData = [
   {
     type: "email",
     value: "hello@rubengarciabri.me",
-    Icon: <FaEnvelope size={20} />,
+    Icon: <FaEnvelope size={26} />,
   },
   {
     type: "phone",
     value: "+44 7563 872 989",
-    Icon: <FaPhoneAlt size={20} />,
+    Icon: <FaPhoneAlt size={26} />,
   },
   {
     type: "location",
     value: "London, UK",
-    Icon: <FaMapMarkerAlt size={20} />,
+    Icon: <FaMapMarkerAlt size={26} />,
   },
 ];
