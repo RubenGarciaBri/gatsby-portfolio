@@ -10,7 +10,7 @@ const Portfolio = () => {
   return (
     <SectionLayout sectionId="section-4" classNames="">
       <div className="mb-24 text-center main-container">
-        <SectionHeading centered>Portfolio</SectionHeading>
+        <SectionHeading center>Portfolio</SectionHeading>
         {/* <p className="text-lg">
           These are all my current published projects. Click on the thumbnails
           to see a full description as well as links to both the github

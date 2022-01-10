@@ -5,20 +5,20 @@ import Divider from "../Divider/Divider";
 interface IPropTypes {
   children: React.ReactNode;
   light?: boolean;
-  centered?: boolean;
+  center?: boolean;
 }
 
-const SectionHeading = ({ children, light, centered }: IPropTypes) => {
+const SectionHeading = ({ children, light, center }: IPropTypes) => {
   return (
     <>
       <h2
         className={`mb-8 text-5xl font-semibold ${
           light ? "text-white" : "text-gray-900"
-        } ${centered && "text-center"}`}
+        } ${center && "text-center"}`}
       >
         {children}
       </h2>
-      <div className={`mb-12 divider ${centered && "mx-auto"}`}></div>
+      <div className={`mb-12 divider ${center && "mx-auto"}`}></div>
     </>
   );
 };

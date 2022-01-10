@@ -6,28 +6,29 @@ import { contactData } from "../data/contactData";
 import LinkedInButton from "../components/Buttons/LinkedInButton/LinkedInButton";
 import GithubButton from "../components/Buttons/GithubButton/GithubButton";
 import { Link } from "gatsby";
+import Form from "../components/Form/Form";
 
 const Contact = () => {
   return (
-    <SectionLayout dark sectionId="section-5">
-      <div className="flex p-12 bg-white main-container drop-shadow rounded-xl">
-        <div className="">
-          <SectionHeading dark>Let's talk</SectionHeading>
-          <p className="mb-5 text-lg">
+    <SectionLayout sectionId="section-5">
+      <div className="flex p-12 bg-gray-900 main-container drop-shadow rounded-xl">
+        <div className="w-1/2">
+          <SectionHeading light>Let's talk</SectionHeading>
+          <p className="mb-5 text-lg text-white">
             Contact me on the details below and I'll reply as soon as I can.
           </p>
           <ul>
             {contactData &&
               contactData.map(({ value, Icon }) => {
                 return (
-                  <li className="flex items-center mb-2 gap-x-4">
+                  <li className="flex items-center mb-2 text-white gap-x-4">
                     {Icon}
                     <span className="text-lg">{value}</span>
                   </li>
                 );
               })}
           </ul>
-          <ul className="flex gap-x-2">
+          <ul className="flex text-white gap-x-2">
             <li>
               <LinkedInButton />
             </li>
@@ -36,44 +37,8 @@ const Contact = () => {
             </li>
           </ul>
         </div>
-        <div className="">
-          <form
-            netlify
-            method="POST"
-            name="contact"
-            className="contact__right-form"
-          >
-            <input
-              type="text"
-              name="name"
-              id="name"
-              placeholder="Name"
-              className="contact__right-form__input"
-              required
-            />
-            <input
-              type="email"
-              name="email"
-              id="email"
-              placeholder="Email"
-              className="contact__right-form__input"
-              required
-            />
-            <textarea
-              name="message"
-              placeholder="Message"
-              id="message"
-              cols="30"
-              rows="10"
-              className="contact__right-form__textarea"
-              required
-            ></textarea>
-            <input
-              type="submit"
-              value="Send Message"
-              className="shadow-xs contact__right-form__btn"
-            />
-          </form>
+        <div className="w-1/2">
+          <Form />
         </div>
       </div>
     </SectionLayout>

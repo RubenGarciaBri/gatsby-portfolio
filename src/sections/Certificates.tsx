@@ -9,7 +9,7 @@ const Certificates = () => {
   return (
     <SectionLayout sectionId="section-3" classNames="">
       <div className="text-center main-container">
-        <SectionHeading centered>Certificates</SectionHeading>
+        <SectionHeading center>Certificates</SectionHeading>
       </div>
       <div className="flex gap-x-12 main-container">
         {certificatesData &&

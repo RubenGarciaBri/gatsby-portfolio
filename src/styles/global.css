@@ -45,18 +45,21 @@ p {
   margin: 0 auto;
 }
 
-/* .profile-img {
-  -webkit-box-shadow: -12px 12px 0px 5px #333;
-  box-shadow: -12px 12px 0px 5px #333;
-} */
+.contact-form {
+  width: 500px;
+}
 
-/* .hero-section {
-  background-size: cover!important;
-  background-repeat: no-repeat;
-  background: linear-gradient(
-      0deg,
-      rgba(255, 255, 255, 0.75),
-      rgba(255, 255, 255, 0.75)
-    ),
-    url("../images/background.png");
-} */
+.input-icon {
+  position: absolute;
+  top: 20px;
+  left: 19px;
+  font-size: 18px;
+}
+
+.timeline-bar {
+  height: 600px;
+}
+
+.timeline-card {
+  width: 620px; 
+}

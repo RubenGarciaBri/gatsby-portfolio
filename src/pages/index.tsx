@@ -6,6 +6,7 @@ import About from "../sections/About";
 import Certificates from "../sections/Certificates";
 import Portfolio from "../sections/Portfolio";
 import Contact from "../sections/Contact";
+import Experience from "../sections/Experience";
 import Seo from "../components/seo";
 
 const IndexPage = () => (
@@ -14,6 +15,7 @@ const IndexPage = () => (
     <About />
     <Portfolio />
     <Certificates />
+    <Experience />
     <Contact />
   </>
 
