@@ -8,7 +8,7 @@ import SectionHeadingSecondary from "../components/SectionHeading/Secondary/Sect
 
 const Certificates = () => {
   return (
-    <SectionLayout sectionId="section-3" classNames="">
+    <SectionLayout sectionId="section-5">
       <div className="text-center main-container">
         <SectionHeadingSecondary>Education</SectionHeadingSecondary>
         <SectionHeadingPrimary center>Certificates</SectionHeadingPrimary>

@@ -7,14 +7,14 @@ import { socialLinksData } from "../../../data/socialLinksData";
 const Footer = () => {
   return (
     <footer className="mt-24">
-      <div className="w-3/5 px-6 pt-16 pb-10 border-t-2 border-gray-200 main-container">
-        <ul className="flex justify-center mb-10 text-xl text-gray-400 gap-x-24">
+      <div className="w-3/5 px-6 pt-20 pb-12 border-t-2 border-gray-200 main-container">
+        <ul className="flex justify-center mb-12 text-xl text-gray-400 gap-x-20">
           {navData &&
             navData.map(({ title }) => {
               return <li className="">{title}</li>;
             })}
         </ul>
-        <ul className="flex justify-center mb-8 text-gray-400 gap-x-8">
+        <ul className="flex justify-center mb-10 text-gray-400 gap-x-8">
           {socialLinksData &&
             socialLinksData.map(({ name, url, Icon }) => {
               return (

@@ -9,7 +9,7 @@ import { isOdd } from "../utils/helpers";
 
 const Portfolio = () => {
   return (
-    <SectionLayout sectionId="section-4" classNames="">
+    <SectionLayout sectionId="section-3">
       <div className="mb-24 text-center main-container">
         <SectionHeadingSecondary>Portfolio</SectionHeadingSecondary>
         <SectionHeadingPrimary center>Recent Projects</SectionHeadingPrimary>

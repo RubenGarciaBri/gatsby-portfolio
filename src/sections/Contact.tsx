@@ -11,7 +11,7 @@ import Form from "../components/Form/Form";
 
 const Contact = () => {
   return (
-    <SectionLayout sectionId="section-5">
+    <SectionLayout sectionId="section-6">
       <div className="relative flex items-center gap-x-12 main-container">
         <div className="w-1/2">
           <SectionHeadingSecondary>Contact</SectionHeadingSecondary>

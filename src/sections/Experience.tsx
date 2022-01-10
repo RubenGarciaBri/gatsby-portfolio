@@ -12,7 +12,7 @@ import TimelineDate from "../components/Timeline/TimelineDate/TimelineDate";
 
 const Experience = () => {
   return (
-    <SectionLayout sectionId="section-5">
+    <SectionLayout sectionId="section-4">
       <div className="text-center main-container">
         <SectionHeadingSecondary>Experience</SectionHeadingSecondary>
         <SectionHeadingPrimary center>Job History</SectionHeadingPrimary>

@@ -9,7 +9,11 @@ export const navData = [
   },
   {
     title: "Experience",
-    sectionLink: "#section-3",
+    sectionLink: "#section-4",
+  },
+  {
+    title: "Certificates",
+    sectionLink: "#section-5",
   },
   {
     title: "Contact",
