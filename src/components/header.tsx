@@ -18,38 +18,6 @@ const Header = ({ siteTitle }) => {
   return (
     <>
       <NavBar />
-      {/* Mobile Menu */}
-      <FaBars
-        onClick={() => setIsMenuOpen(!isMenuOpen)}
-        className="text-xl cursor-pointer sideNav__icon md:hidden"
-      />
-      {isMenuOpen ? (
-        <ul
-          ref={mobileMenu}
-          className="p-10 bg-blue-500 sideNav shadow-slim md:hidden"
-        >
-          <li className="sideNav__item">
-            <a href="#section-2">
-              <span>About</span>
-            </a>
-          </li>
-          <li className="sideNav__item">
-            <a href="#section-3">
-              <span>Certificates</span>
-            </a>
-          </li>
-          <li className="sideNav__item">
-            <a href="#section-4">
-              <span>Portfolio</span>
-            </a>
-          </li>
-          <li className="sideNav__item">
-            <a href="#section-5">
-              <span>Contact</span>
-            </a>
-          </li>
-        </ul>
-      ) : null}
     </>
   );
 };

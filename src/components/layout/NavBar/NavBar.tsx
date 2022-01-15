@@ -1,9 +1,36 @@
-import React from "react";
-import { FaCode, FaBars } from "react-icons/fa";
-import Links from "./Links/Links";
+import * as React from "react";
+
+// import { useOutsideClick } from "../../../utils/useOutsideClick";
+import { FaBars } from "react-icons/fa";
 import { navData } from "../../../data/navData";
+import Links from "./Links/Links";
+import MobileLinks from "./MobileLinks/MobileLinks";
+
+// TODO: Investigate why this function doesn't work and eventually import it
+const useOutsideClick = (ref, callback) => {
+  const handleClick = event => {
+    if (!ref.current || ref.current.contains(event.target)) {
+      return;
+    }
+    callback(event);
+  };
+
+  React.useEffect(() => {
+    document.addEventListener("click", handleClick);
+
+    return () => {
+      document.removeEventListener("click", handleClick);
+    };
+  }, [ref, callback]);
+};
 
 const Navbar = () => {
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = React.useState(false);
+
+  const ref = React.useRef();
+
+  useOutsideClick(ref, () => setIsMobileMenuOpen(false));
+
   return (
     <nav className="z-50 py-5 navbar">
       <div className="flex items-center justify-between px-8">
@@ -15,31 +42,17 @@ const Navbar = () => {
             RG
           </a>
         </div>
-        <Links navLinks={navData} />
-        {/* Mobile Menu */}
-        {/* <FaBars className="sideNav__icon sm:hidden" />
-        <ul className="sideNav shadow-slim sm:hidden">
-          <li className="sideNav__item">
-            <a href="#section-2">
-              <span>About</span>
-            </a>
-          </li>
-          <li className="sideNav__item">
-            <a href="#section-3">
-              <span>Certificates</span>
-            </a>
-          </li>
-          <li className="sideNav__item">
-            <a href="#section-4">
-              <span>Portfolio</span>
-            </a>
-          </li>
-          <li className="sideNav__item">
-            <a href="#section-5">
-              <span>Contact</span>
-            </a>
-          </li>
-        </ul> */}
+        <div className="hidden lg:block">
+          <Links navLinks={navData} />
+        </div>
+        <div ref={ref} className="relative lg:hidden">
+          <FaBars
+            size={24}
+            onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+            className="text-xl cursor-pointer lg:hidden"
+          />
+          {isMobileMenuOpen && <MobileLinks navLinks={navData} />}
+        </div>
       </div>
     </nav>
   );

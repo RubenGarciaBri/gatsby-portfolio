@@ -1,5 +1,6 @@
 import * as React from "react";
 
+import { Link } from "gatsby";
 import { RiGatsbyLine } from "react-icons/ri";
 import { navData } from "../../../data/navData";
 import { socialLinksData } from "../../../data/socialLinksData";
@@ -10,8 +11,12 @@ const Footer = () => {
       <div className="w-3/5 px-6 pt-20 pb-12 border-t-2 border-gray-200 main-container">
         <ul className="flex justify-center mb-12 text-xl text-gray-400 gap-x-20">
           {navData &&
-            navData.map(({ title }) => {
-              return <li className="">{title}</li>;
+            navData.map(({ title, sectionLink }) => {
+              return (
+                <li className="">
+                  <Link to={sectionLink}>{title}</Link>
+                </li>
+              );
             })}
         </ul>
         <ul className="flex justify-center mb-10 text-gray-400 gap-x-8">

@@ -1,6 +1,6 @@
 import * as React from "react";
 
-import readableImg from "../images/readable-4.jpg";
+import readableImg from "../images/new-readable-2.png";
 import wyrImg from "../images/wyr-5.jpg";
 import contentfulImg from "../images/contentful-1.jpg";
 import flashcardsImg from "../images/flashcards-5.png";

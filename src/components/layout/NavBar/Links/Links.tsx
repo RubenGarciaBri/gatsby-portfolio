@@ -15,12 +15,6 @@ const Links = ({ navLinks }: IPropTypes) => {
         navLinks.map(({ title, sectionLink }, index) => {
           return <Link key={index} title={title} sectionLink={sectionLink} />;
         })}
-      {/* <li>
-        <button className="flex items-center px-6 py-3 text-xl font-semibold tracking-wide border-2 border-gray-900 rounded-xl gap-x-2">
-          CV
-          <IoNewspaperOutline />
-        </button>
-      </li> */}
     </ul>
   );
 };
