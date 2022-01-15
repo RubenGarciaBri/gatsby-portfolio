@@ -12,8 +12,8 @@ const ButtonBase = ({ children, classNames, small }: IPropTypes) => {
     <Link to="#section-5">
       <button
         className={`${
-          small ? "px-6 py-3" : "px-10 py-5"
-        } font-bold text-lg rounded-lg drop-shadow-md ${
+          small ? "px-6 py-4" : "px-6 py-4 md:px-10 md:py-5"
+        } font-bold md:text-lg rounded-lg drop-shadow-md ${
           classNames && classNames
         }`}
       >

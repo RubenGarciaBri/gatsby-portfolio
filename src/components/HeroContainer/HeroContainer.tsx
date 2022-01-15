@@ -1,10 +1,10 @@
 import * as React from "react";
 
 import { StaticImage } from "gatsby-plugin-image";
+import { socialLinksData } from "../../data/socialLinksData";
 import PrimaryButton from "../Buttons/PrimaryButton/PrimaryButton";
 import SecondaryButton from "../Buttons/SecondaryButton/SecondaryButton";
-import LinkedInButton from "../Buttons/LinkedInButton/LinkedInButton";
-import GithubButton from "../Buttons/GithubButton/GithubButton";
+import SocialButton from "../Buttons/SocialButton/SocialButton";
 
 interface IPropTypes {
   heading: string;
@@ -14,24 +14,34 @@ interface IPropTypes {
 const HeroContainer = ({ heading, subHeading }: IPropTypes) => {
   return (
     <div className="main-container">
-      <div className="flex items-stretch mt-32 mb-52 justify-items-start">
-        <div className="w-3/5 mr-8 ">
-          <h3 className="mb-4 text-2xl font-semibold text-gray-400 subheading">
-            {subHeading}
-          </h3>
-          <h1 className="mb-3 font-semibold leading-tight text-7xl ">
+      <div className="flex flex-col items-stretch mt-32 text-center lg:text-left mb-52 justify-items-start lg:flex-row">
+        <div className="mr-8 lg:w-3/5">
+          <div className="flex items-center justify-center mb-6 lg:justify-start gap-x-5">
+            <h3 className="flex text-xl font-semibold text-gray-400 sm:text-2xl subheading">
+              {subHeading}
+            </h3>
+            <StaticImage
+              placeholder="blurred"
+              src="../../images/prof-small.png"
+              className="w-12 w-full bg-gray-200 rounded-full shadow-inner md:w-14 lg:hidden"
+              alt="Ruben's profile picture"
+            />
+          </div>
+          <h1 className="mb-3 text-4xl font-semibold leading-tight md:text-6xl lg:text-7xl ">
             A <span className="font-bold text-blue-500">React Developer</span>{" "}
             with passion for the new web technologies
           </h1>
-          <ul className="flex mb-12">
-            <li className="mr-4">
-              <LinkedInButton size={36} />
-            </li>
-            <li>
-              <GithubButton size={36} />
-            </li>
+          <ul className="flex justify-center mb-12 lg:justify-start">
+            {socialLinksData &&
+              socialLinksData.map(({ type, url }) => {
+                return (
+                  <li className="mr-4">
+                    <SocialButton type={type} url={url} />
+                  </li>
+                );
+              })}
           </ul>
-          <div className="flex mt-1 gap-x-6">
+          <div className="flex justify-center mt-1 gap-x-6 lg:justify-start">
             <PrimaryButton>Let's Talk</PrimaryButton>
             <SecondaryButton>See My Work</SecondaryButton>
           </div>
@@ -40,7 +50,7 @@ const HeroContainer = ({ heading, subHeading }: IPropTypes) => {
           <StaticImage
             placeholder="blurred"
             src="../../images/side-2.png"
-            className="hidden w-full bg-gray-200 rounded-full shadow-inner md:block profile-img"
+            className="hidden w-full bg-gray-200 rounded-full shadow-inner lg:block profile-img"
             alt="Ruben's profile picture"
           />
         </div>

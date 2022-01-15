@@ -4,13 +4,13 @@ import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 export const socialLinksData = [
   {
-    name: "LinkedIn",
-    url: "",
+    type: "linkedin",
+    url: "https://www.linkedin.com/in/ruben-garcia-bri",
     Icon: <FaLinkedin />,
   },
   {
-    name: "Github",
-    url: "",
+    type: "github",
+    url: "https://github.com/RubenGarciaBri",
     Icon: <FaGithub />,
   },
 ];

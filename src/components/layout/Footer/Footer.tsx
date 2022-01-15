@@ -21,7 +21,7 @@ const Footer = () => {
         </ul>
         <ul className="flex justify-center mb-10 text-gray-400 gap-x-8">
           {socialLinksData &&
-            socialLinksData.map(({ name, url, Icon }) => {
+            socialLinksData.map(({ type, url, Icon }) => {
               return (
                 <li className="p-3 text-2xl text-white duration-200 bg-gray-300 rounded-full hover:bg-blue-500">
                   {Icon}

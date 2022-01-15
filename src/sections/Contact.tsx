@@ -4,9 +4,7 @@ import SectionHeadingPrimary from "../components/SectionHeading/Primary/SectionH
 import SectionHeadingSecondary from "../components/SectionHeading/Secondary/SectionHeadingSecondary";
 import SectionLayout from "..//components/SectionLayout/SectionLayout";
 import { contactData } from "../data/contactData";
-import LinkedInButton from "../components/Buttons/LinkedInButton/LinkedInButton";
-import GithubButton from "../components/Buttons/GithubButton/GithubButton";
-import { Link } from "gatsby";
+import SocialButton from "../components/Buttons/SocialButton/SocialButton";
 import Form from "../components/Form/Form";
 
 const Contact = () => {
@@ -31,14 +29,6 @@ const Contact = () => {
                   </li>
                 );
               })}
-          </ul>
-          <ul className="flex text-white gap-x-4">
-            <li>
-              <LinkedInButton size={36} />
-            </li>
-            <li>
-              <GithubButton size={36} />
-            </li>
           </ul>
         </div>
         <div className="flex justify-center w-1/2">
