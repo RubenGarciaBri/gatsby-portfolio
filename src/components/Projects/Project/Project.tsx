@@ -29,8 +29,8 @@ const Project = ({
             alt="Ruben's profile picture"
           />
         </Link>
-        <div className="flex px-8 pt-12 pb-3">
-          <div className="w-3/4">
+        <div className="flex flex-row px-4 pt-12 pb-3 sm:px-8 md:flex-col">
+          <div className="w-full md:w-3/4">
             <h3 className="mb-4 text-4xl font-semibold">{title}</h3>
             <ul className="flex gap-x-2.5 mb-7">
               {badges &&
@@ -41,14 +41,14 @@ const Project = ({
             {description &&
               description.map((paragraph, index) => {
                 return (
-                  <p key={index} className="mb-4 text-lg">
+                  <p key={index} className="w-full mb-4 text-lg">
                     {paragraph}
                   </p>
                 );
               })}
             <TertiaryButton classNames="mt-5">See Project</TertiaryButton>
           </div>
-          <div className="w-1/4"></div>
+  
         </div>
       </div>
     </div>

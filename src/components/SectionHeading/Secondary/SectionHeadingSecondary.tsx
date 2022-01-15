@@ -10,7 +10,7 @@ const SectionHeadingSecondary = ({ children, light, center }: IPropTypes) => {
   return (
     <>
       <h2
-        className={`mb-3 tracking-widest uppercase text ${
+        className={`mb-2 lg:mb-3 tracking-widest uppercase ${
           light ? "text-white" : "text-gray-400"
         } ${center && "text-center"}`}
       >
