@@ -5,7 +5,11 @@ interface IPropTypes {
 }
 
 const Divider = ({ center }: IPropTypes) => {
-  return <div className={`mb-12 divider ${center && "mx-auto"}`}></div>;
+  return (
+    <div
+      className={`mb-12 divider mx-auto md:mx-0 ${center && "mx-auto"}`}
+    ></div>
+  );
 };
 
 export default Divider;

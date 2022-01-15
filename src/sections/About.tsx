@@ -12,16 +12,18 @@ const About = () => {
   return (
     <SectionLayout sectionId="section-2" classNames="">
       <div className="flex justify-center mt-24 about main-container">
-        <div className="flex flex-col justify-center w-1/3">
+        <div className="flex flex-col justify-center xl:w-1/3">
           <StaticImage
             src="../images/prof2.png"
-            className="w-full rounded-lg rounded-full"
+            className="hidden w-full rounded-lg rounded-full xl:block"
             alt=""
           />
         </div>
-        <div className="w-2/3 pl-20">
-          <SectionHeadingSecondary>About Me</SectionHeadingSecondary>
-          <SectionHeadingPrimary>Hey there!</SectionHeadingPrimary>
+        <div className="w-full xl:pl-20 md:w-4/5 md:mx-auto xl:w-2/3">
+          <div className="text-center md:text-left">
+            <SectionHeadingSecondary>About Me</SectionHeadingSecondary>
+            <SectionHeadingPrimary>Hey there!</SectionHeadingPrimary>
+          </div>
           <p className="mb-6 text-xl">
             I'm a Frontend Developer living in London, UK. I specialise in React
             and I'm currently part of the engineering team at Behaviour Lab, a
@@ -38,7 +40,9 @@ const About = () => {
             <b>improve people's lives through technology</b> and make this world
             a better place. I believe writing code is the way to go.
           </p>
-          <TertiaryButton>Download CV</TertiaryButton>
+          <div className="text-center md:text-left">
+            <TertiaryButton>Download CV</TertiaryButton>
+          </div>
         </div>
       </div>
       <Carousel classNames="mt-32" />
