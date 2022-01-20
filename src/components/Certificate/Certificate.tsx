@@ -20,7 +20,7 @@ const Certificate = ({
   url,
 }: IPropTypes) => {
   return (
-    <div className="my-16 bg-blue-300 xl:w-1/2 rounded-3xl drop-shadow-2xl">
+    <div className="my-16 bg-blue-200 xl:w-1/2 rounded-3xl drop-shadow-2xl">
       <div className="flex items-end mx-10 mt-12 border-b-2 border-blue-400 md:mx-16 md:mt-20 mb-7 ">
         <svg
           xmlns="http://www.w3.org/2000/svg"

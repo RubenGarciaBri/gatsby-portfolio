@@ -16,7 +16,7 @@ const Form = () => {
       netlify
       method="POST"
       name="contact"
-      className="flex flex-col p-12 bg-gray-900 drop-shadow-2xl rounded-xl contact-form"
+      className="flex flex-col bg-gray-900 p-14 drop-shadow-2xl rounded-xl min-w-[580px]"
     >
       <Label htmlFor="name">Your Name</Label>
       <Input
