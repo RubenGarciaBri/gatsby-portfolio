@@ -13,7 +13,7 @@ const Certificates = () => {
         <SectionHeadingSecondary>Education</SectionHeadingSecondary>
         <SectionHeadingPrimary center>Certificates</SectionHeadingPrimary>
       </div>
-      <div className="flex gap-x-12 main-container">
+      <div className="flex flex-col xl:flex-row gap-x-12 main-container">
         {certificatesData &&
           certificatesData.map(
             ({ school, name, duration, description, subjects, url }) => {

@@ -18,22 +18,24 @@ const Experience = () => {
         <SectionHeadingPrimary center>Job History</SectionHeadingPrimary>
       </div>
       <div className="main-container">
-        <TimelineBar>
-          <TimelinePoint />
-          <TimelineDate>September 2021 - Present</TimelineDate>
-          <TimelineCard
-            companyImg={behaviourLabImg}
-            companyName="Behaviour Lab"
-            jobTitle="Frontend Engineer"
-            location="London, UK"
-            techStack={getTechIcons(["react", "next", "typescript", "d3"])}
-          >
-            Co-developing the Front-end of a Fintech SaaS platform that helps
-            asset managers, private equity firms, insurance companies and
-            executive boards make better financial decisions through analytics
-            and behavioural science.
-          </TimelineCard>
-        </TimelineBar>
+        <div className="flex justify-center mx-auto lg:mx-0 w-[300px] lg:w-[500px] xl:w-[950px] mt-24 2xl:mx-auto">
+          <TimelineBar>
+            <TimelinePoint />
+            <TimelineDate>September 2021 - Present</TimelineDate>
+            <TimelineCard
+              companyImg={behaviourLabImg}
+              companyName="Behaviour Lab"
+              jobTitle="Frontend Engineer"
+              location="London, UK"
+              techStack={getTechIcons(["react", "next", "typescript", "d3"])}
+            >
+              Co-developing the Front-end of a Fintech SaaS platform that helps
+              asset managers, private equity firms, insurance companies and
+              executive boards make better financial decisions through analytics
+              and behavioural science.
+            </TimelineCard>
+          </TimelineBar>
+        </div>
       </div>
     </SectionLayout>
   );

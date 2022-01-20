@@ -6,7 +6,7 @@ interface IPropTypes {
 
 const TimelineBar = ({ children }: IPropTypes) => {
   return (
-    <div className="relative w-2 mx-auto mt-24 bg-gray-900 rounded-full timeline-bar">
+    <div className="w-0 lg:w-2 relative bg-gray-900 rounded-full h-[600px]">
       {children}
     </div>
   );

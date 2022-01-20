@@ -24,8 +24,8 @@ const TimelineCard = ({
   children,
 }: IPropTypes) => {
   return (
-    <div className="absolute p-10 bg-gray-200 -translate-y-1/3 timeline-card rounded-2xl drop-shadow top-1/3 left-20">
-      <div className="absolute w-6 h-6 rotate-45 bg-gray-200 -translate-y-1/3 -left-3 top-1/3"></div>
+    <div className="absolute p-10 -translate-x-1/2 -translate-y-1/2 bg-gray-200 lg:translate-x-0 top-1/2 left-1/2 lg:-translate-y-1/3 timeline-card rounded-2xl drop-shadow lg:top-1/3 lg:left-20">
+      <div className="absolute hidden w-6 h-6 rotate-45 bg-gray-200 lg:block -translate-y-1/3 -left-3 top-1/3"></div>
       <div className="flex items-center mb-3">
         <img
           src={companyImg}
@@ -55,21 +55,6 @@ const TimelineCard = ({
             );
           })}
       </ul>
-
-      {/* <ul className="flex gap-x-4">
-        <li>
-          <i className="text-2xl devicon-react-original"></i>
-        </li>
-        <li>
-          <i className="text-2xl devicon-nextjs-original"></i>
-        </li>
-        <li>
-          <i className="text-2xl devicon-typescript-plain"></i>
-        </li>
-        <li>
-          <i className="text-2xl devicon-d3js-plain"></i>
-        </li>
-      </ul> */}
     </div>
   );
 };

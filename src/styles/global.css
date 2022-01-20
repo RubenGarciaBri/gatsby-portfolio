@@ -45,9 +45,6 @@ p {
   margin: 0 auto;
 }
 
-/* .carousel-item {
-  flex-basis: 14%;
-} */
 
 .contact-form {
   width: 550px;
@@ -58,10 +55,6 @@ p {
   top: 20px;
   left: 18px;
   font-size: 18px;
-}
-
-.timeline-bar {
-  height: 600px;
 }
 
 .timeline-card {
