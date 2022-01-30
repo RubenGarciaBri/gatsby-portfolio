@@ -48,7 +48,6 @@ const Project = ({
               })}
             <TertiaryButton classNames="mt-5">See Project</TertiaryButton>
           </div>
-  
         </div>
       </div>
     </div>

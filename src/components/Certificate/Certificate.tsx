@@ -39,7 +39,9 @@ const Certificate = ({
           <h5 className="mb-1 text-2xl font-bold text-blue-900 ">
             <i className="fas fa-code"></i> {name}
           </h5>
-          <p className="pb-1 mb-4 text-lg font-semibold text-blue-900">{duration}</p>
+          <p className="pb-1 mb-4 text-lg font-semibold text-blue-900">
+            {duration}
+          </p>
         </div>
       </div>
       <div className="px-10 pb-12 md:pb-20 md:px-16">
