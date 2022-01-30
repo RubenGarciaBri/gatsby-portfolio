@@ -32,7 +32,7 @@ const Contact = () => {
             </ul>
           </div>
         </div>
-        <div className="flex justify-center w-1/2 mt-16 xl:mt-0">
+        <div className="flex justify-center w-full mt-16 xl:w-1/2 xl:mt-0">
           <Form />
         </div>
       </div>
