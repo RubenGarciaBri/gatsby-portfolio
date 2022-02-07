@@ -22,17 +22,19 @@ const Portfolio = () => {
 
       <div className="flex flex-col main-container gap-y-48">
         {projectsData &&
-          projectsData.map(({ title, image, badges, description }, index) => {
-            return (
-              <Project
-                title={title}
-                image={image}
-                badges={badges}
-                description={description}
-                reversed={isOdd(index)}
-              />
-            );
-          })}
+          projectsData.map(
+            ({ title, slug, image, badgeNames, description }, index) => {
+              return (
+                <Project
+                  title={title}
+                  slug={slug}
+                  image={image}
+                  badgeNames={badgeNames}
+                  description={description}
+                />
+              );
+            }
+          )}
       </div>
     </SectionLayout>
   );

@@ -3,7 +3,7 @@ import * as React from "react";
 // import { useOutsideClick } from "../../../utils/useOutsideClick";
 import { FaBars } from "react-icons/fa";
 import { navData } from "../../../data/navData";
-import Links from "./Links/Links";
+import NavLinks from "./NavLinks/NavLinks";
 import MobileLinks from "./MobileLinks/MobileLinks";
 
 // TODO: Investigate why this function doesn't work and eventually import it
@@ -32,18 +32,15 @@ const Navbar = () => {
   useOutsideClick(ref, () => setIsMobileMenuOpen(false));
 
   return (
-    <nav className="z-50 py-5 navbar">
+    <nav className="z-50 py-5 border-b shadow-sm">
       <div className="flex items-center justify-between px-8">
         <div className="logo-box">
-          <a
-            href="#section-1"
-            className="flex text-5xl font-bold text-gray-900 logo"
-          >
+          <a href="/" className="flex text-5xl font-bold text-gray-900 logo">
             RG
           </a>
         </div>
         <div className="hidden lg:block">
-          <Links navLinks={navData} />
+          <NavLinks navLinks={navData} />
         </div>
         <div ref={ref} className="relative lg:hidden">
           <FaBars

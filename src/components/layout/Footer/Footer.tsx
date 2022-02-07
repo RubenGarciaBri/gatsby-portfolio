@@ -12,9 +12,9 @@ const Footer = () => {
         <div className="w-[80%] mx-auto pt-16 md:pt-20 pb-12 border-t-2 border-gray-200 xl:w-[80%] ">
           <ul className="flex flex-col justify-center mb-12 text-xl text-center text-gray-400 gap-y-6 md:flex-row gap-x-12 lg:gap-x-20">
             {navData &&
-              navData.map(({ title, sectionLink }) => {
+              navData.map(({ title, sectionLink }, i) => {
                 return (
-                  <li className="hover:text-blue-500">
+                  <li key={i} className="hover:text-blue-500">
                     <Link to={sectionLink}>{title}</Link>
                   </li>
                 );
@@ -22,9 +22,12 @@ const Footer = () => {
           </ul>
           <ul className="flex justify-center mb-10 text-gray-400 gap-x-8">
             {socialLinksData &&
-              socialLinksData.map(({ type, url, Icon }) => {
+              socialLinksData.map(({ type, url, Icon }, i) => {
                 return (
-                  <li className="p-3 text-2xl text-white duration-200 bg-gray-300 rounded-full hover:bg-blue-500">
+                  <li
+                    key={i}
+                    className="p-3 text-2xl text-white duration-200 bg-gray-300 rounded-full hover:bg-blue-500"
+                  >
                     {Icon}
                   </li>
                 );

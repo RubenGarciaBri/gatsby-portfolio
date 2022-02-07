@@ -1,28 +1,30 @@
 import React from "react";
 
 import { Link } from "gatsby";
+
+import { badges } from "../../../data/badges";
 import TertiaryButton from "../../Buttons/TertiaryButton/TertiaryButton";
 
 interface IPropTypes {
   title: string;
+  slug: string;
   image: string;
   // TODO: Make more specific
-  badges: Array<any>;
+  badgeNames: Array<any>;
   description: Array<any>;
-  reversed?: boolean;
 }
 
 const Project = ({
   title,
+  slug,
   image,
-  badges,
+  badgeNames,
   description,
-  reversed,
 }: IPropTypes) => {
   return (
     <div className="small-container">
       <div className="p-8 bg-white drop-shadow-2xl rounded-3xl project">
-        <Link to="/">
+        <Link to={`/projects/${slug}`}>
           <img
             src={image}
             className="w-full rounded-3xl "
@@ -33,9 +35,9 @@ const Project = ({
           <div className="w-full md:w-3/4">
             <h3 className="mb-4 text-4xl font-semibold">{title}</h3>
             <ul className="flex gap-x-2.5 mb-7">
-              {badges &&
-                badges.map((badge, index) => {
-                  return <li key={index}>{badge}</li>;
+              {badgeNames &&
+                badgeNames.map((badgeName, index) => {
+                  return <li key={index}>{badges[badgeName]}</li>;
                 })}
             </ul>
             {description &&
