@@ -4,11 +4,15 @@ export const navData = [
     link: "/about",
   },
   {
+    title: "Projects",
+    link: "/projects",
+  },
+  {
     title: "Blog",
     link: "/blog",
   },
   {
-    title: "Projects",
+    title: "Resources",
     link: "/projects",
   },
   {

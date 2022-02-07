@@ -32,7 +32,7 @@ const Navbar = () => {
   useOutsideClick(ref, () => setIsMobileMenuOpen(false));
 
   return (
-    <nav className="z-50 py-5 border-b shadow-sm">
+    <nav className="z-50 py-5">
       <div className="flex items-center justify-between px-8">
         <div className="logo-box">
           <a href="/" className="flex text-5xl font-bold text-gray-900 logo">
