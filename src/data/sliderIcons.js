@@ -1,31 +1,31 @@
 export const sliderIcons = [
-  {
-    iconClassName: "devicon-html5-plain",
-    colored: true,
-  },
-  {
-    iconClassName: "devicon-css3-plain",
-    colored: true,
-  },
-  {
-    iconClassName: "devicon-sass-original",
-    colored: true,
-  },
-  {
-    iconClassName: "devicon-javascript-plain",
-    colored: true,
-  },
+  // {
+  //   iconClassName: "devicon-html5-plain",
+  //   colored: false,
+  // },
+  // {
+  //   iconClassName: "devicon-css3-plain",
+  //   colored: false,
+  // },
+  // {
+  //   iconClassName: "devicon-sass-original",
+  //   colored: false,
+  // },
+  // {
+  //   iconClassName: "devicon-javascript-plain",
+  //   colored: false,
+  // },
   {
     iconClassName: "devicon-react-original",
-    colored: true,
+    colored: false,
   },
   {
     iconClassName: "devicon-redux-original",
-    colored: true,
+    colored: false,
   },
   {
     iconClassName: "devicon-typescript-plain",
-    colored: true,
+    colored: false,
   },
   {
     iconClassName: "devicon-nextjs-original",
@@ -33,26 +33,30 @@ export const sliderIcons = [
   },
   {
     iconClassName: "devicon-gatsby-plain",
-    colored: true,
+    colored: false,
   },
   {
     iconClassName: "devicon-nodejs-plain",
-    colored: true,
+    colored: false,
+  },
+  {
+    iconClassName: "devicon-express-original",
+    colored: false,
   },
   {
     iconClassName: "devicon-git-plain",
-    colored: true,
+    colored: false,
   },
   {
     iconClassName: "devicon-d3js-plain",
-    colored: true,
+    colored: false,
   },
-  {
-    iconClassName: "devicon-webpack-plain",
-    colored: true,
-  },
+  // {
+  //   iconClassName: "devicon-webpack-plain",
+  //   colored: false,
+  // },
   {
     iconClassName: "devicon-firebase-plain",
-    colored: true,
+    colored: false,
   },
 ];

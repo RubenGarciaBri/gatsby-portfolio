@@ -4,16 +4,19 @@ import React from "react";
 
 import Navbar from "../components/Layout/NavBar/NavBar";
 import HeroContainer from "../components/HeroContainer/HeroContainer";
-import SectionLayout from "../components/SectionLayout/SectionLayout";
+import LatestPosts from "../components/LatestPosts/LatestPosts";
 import { heroData } from "../data/heroData";
 
 const Hero = () => {
   const { heading, subHeading } = heroData;
 
   return (
-    <section id="section-1" className="hero-section">
+    <section id="section-1" className="min-h-screen hero-section">
       <Navbar />
       <HeroContainer heading={heading} subHeading={subHeading} />
+      <div className="main-container">
+        <LatestPosts />
+      </div>
     </section>
   );
 };
