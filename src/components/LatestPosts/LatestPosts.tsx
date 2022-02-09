@@ -41,7 +41,7 @@ const LatestPosts = () => {
                     alt="Post header picture"
                   />
                 </div>
-                <div className="p-6">
+                <div className="p-8">
                   <h3 className="mb-1.5 capitalize text-2xl font-semibold">
                     {title}
                   </h3>

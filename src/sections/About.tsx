@@ -2,15 +2,13 @@ import React from "react";
 
 import { StaticImage } from "gatsby-plugin-image";
 import SectionLayout from "../components/SectionLayout/SectionLayout";
-import SectionHeading from "../components/SectionHeading/Primary/SectionHeadingPrimary";
-import Carousel from "../components/Carousel/Carousel";
 import TertiaryButton from "../components/Buttons/TertiaryButton/TertiaryButton";
 import SectionHeadingPrimary from "../components/SectionHeading/Primary/SectionHeadingPrimary";
 import SectionHeadingSecondary from "../components/SectionHeading/Secondary/SectionHeadingSecondary";
 
 const About = () => {
   return (
-    <SectionLayout sectionId="section-2" classNames="">
+    <SectionLayout sectionId="section-2" classNames="mt-16">
       <div className="flex justify-center mt-24 about main-container">
         <div className="flex flex-col justify-center xl:w-1/3">
           <StaticImage
@@ -41,11 +39,11 @@ const About = () => {
             a better place. I believe writing code is the way to go.
           </p>
           <div className="text-center md:text-left">
-            <TertiaryButton>Download CV</TertiaryButton>
+            <TertiaryButton classNames="mr-5">Learn More</TertiaryButton>
+            <TertiaryButton>See My Projects</TertiaryButton>
           </div>
         </div>
       </div>
-      <Carousel classNames="mt-32" />
     </SectionLayout>
   );
 };

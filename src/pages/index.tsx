@@ -13,12 +13,12 @@ import Seo from "../components/seo";
 const IndexPage = () => (
   <>
     <Hero />
-    {/* <About />
-    <Portfolio />
+    <About />
+    {/* <Portfolio />
     <Experience />
     <Certificates />
-    <Contact />
-    <Footer /> */}
+    <Contact /> */}
+    <Footer />
   </>
 
   // <Seo title="Home" />
