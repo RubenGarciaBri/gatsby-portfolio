@@ -8,6 +8,7 @@ import Portfolio from "../sections/Portfolio";
 import Contact from "../sections/Contact";
 import Experience from "../sections/Experience";
 import Footer from "../components/Layout/Footer/Footer";
+import CallToAction from "../components/Badges/CallToAction/CallToAction";
 import Seo from "../components/seo";
 
 const IndexPage = () => (
@@ -18,6 +19,7 @@ const IndexPage = () => (
     <Experience />
     <Certificates />
     <Contact /> */}
+    <CallToAction />
     <Footer />
   </>
 
