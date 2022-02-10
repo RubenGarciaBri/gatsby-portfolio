@@ -7,9 +7,9 @@ import { socialLinksData } from "../../../data/socialLinksData";
 
 const Footer = () => {
   return (
-    <footer className="mt-24">
+    <footer className="">
       <div className="main-container">
-        <div className="w-[80%] mx-auto pt-16 md:pt-20 pb-12 border-t-2 border-gray-200 xl:w-[80%] ">
+        <div className="w-[80%] mx-auto pt-16 md:pt-20 pb-12">
           <ul className="flex flex-col justify-center mb-12 text-xl text-center text-gray-400 gap-y-6 md:flex-row gap-x-12 lg:gap-x-20">
             {navData &&
               navData.map(({ title, sectionLink }, i) => {
