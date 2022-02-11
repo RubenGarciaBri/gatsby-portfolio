@@ -4,9 +4,7 @@ import BadgeBase from "../BadgeBase";
 
 const FirebaseBadge = () => {
   return (
-    <BadgeBase color="#5d3100" bgColor="#ffd3a1">
-      Firebase
-    </BadgeBase>
+    <BadgeBase classNames="bg-amber-100 text-amber-900">Firebase</BadgeBase>
   );
 };
 

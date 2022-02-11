@@ -13,7 +13,7 @@ const About = () => {
         <div className="flex flex-col justify-center xl:w-1/3">
           <StaticImage
             src="../images/prof2.png"
-            className="hidden w-full rounded-lg rounded-full xl:block"
+            className="hidden w-full rounded-full xl:block"
             alt=""
           />
         </div>
@@ -23,9 +23,9 @@ const About = () => {
             <SectionHeadingPrimary>Hey there!</SectionHeadingPrimary>
           </div>
           <p className="mb-6 text-lg md:text-xl">
-            I'm a Frontend Developer living in London, UK. I specialise in React
-            and I'm currently part of the engineering team at Behaviour Lab, a
-            fintech startup based in the capital.
+            I'm a Frontend Engineer living in London, UK. I specialise in React
+            and I'm currently part of the tech team at Behaviour Lab, a fintech
+            startup based in the capital.
           </p>
           <p className="mb-6 text-lg md:text-xl">
             I'm passionate about software and the latest web technologies. I'm

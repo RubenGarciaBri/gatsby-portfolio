@@ -30,7 +30,7 @@ const TextArea = ({
       id={id}
       cols={cols ? cols : 3}
       rows={rows ? rows : 5}
-      className={`p-5 text-xl rounded-lg resize-none ${
+      className={`p-5 text-xl rounded-2xl resize-none ${
         classNames && classNames
       }`}
       onChange={e => onChange(e.target.value)}

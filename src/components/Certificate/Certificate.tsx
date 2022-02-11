@@ -20,7 +20,7 @@ const Certificate = ({
   url,
 }: IPropTypes) => {
   return (
-    <div className="my-16 bg-blue-200 xl:w-1/2 rounded-3xl drop-shadow-2xl">
+    <div className="my-16 bg-blue-200 xl:w-1/2 rounded-2xl drop-shadow-2xl">
       <div className="flex items-end mx-10 mt-12 border-b-2 border-blue-400 md:mx-16 md:mt-20 mb-7 ">
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -53,7 +53,7 @@ const Certificate = ({
         <a
           href="https://confirm.udacity.com/DNMGJX5N"
           target="_blank"
-          className="inline-flex items-center gap-x-2 px-5 py-3.5 bg-white text-blue-900 rounded-lg font-bold drop-shadow-sm"
+          className="inline-flex items-center gap-x-2 px-5 py-3.5 bg-white text-blue-900 rounded-2xl font-bold drop-shadow-sm"
         >
           <span>See Certificate</span>
           <AiFillSafetyCertificate size={20} />

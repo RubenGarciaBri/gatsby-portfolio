@@ -3,11 +3,7 @@ import * as React from "react";
 import BadgeBase from "../BadgeBase";
 
 const ExpoBadge = () => {
-  return (
-    <BadgeBase color="#100c38" bgColor="#b1aaed">
-      Expo
-    </BadgeBase>
-  );
+  return <BadgeBase classNames="bg-gray-100 text-gray-100">Expo</BadgeBase>;
 };
 
 export default ExpoBadge;

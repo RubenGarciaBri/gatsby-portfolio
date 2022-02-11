@@ -30,7 +30,7 @@ const TimelineCard = ({
         <img
           src={companyImg}
           alt="BehaviourLab Logo"
-          className="w-16 h-16 rounded-lg shadow-inner"
+          className="w-16 h-16 rounded-2xl shadow-inner"
         />
         <h3 className="mt-6 mb-6 ml-4 text-3xl font-semibold">{companyName}</h3>
       </div>

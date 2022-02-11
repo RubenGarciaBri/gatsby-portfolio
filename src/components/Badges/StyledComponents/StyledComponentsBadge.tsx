@@ -4,7 +4,7 @@ import BadgeBase from "../BadgeBase";
 
 const StyledComponentsBadge = () => {
   return (
-    <BadgeBase color="#231f1b" bgColor="#d7d2cb">
+    <BadgeBase classNames="bg-stone-100 text-stone-900">
       Styled Components
     </BadgeBase>
   );

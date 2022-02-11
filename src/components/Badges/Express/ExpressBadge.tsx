@@ -4,9 +4,7 @@ import BadgeBase from "../BadgeBase";
 
 const ExpressBadge = () => {
   return (
-    <BadgeBase color="#013c01" bgColor="#a3fea3">
-      Express
-    </BadgeBase>
+    <BadgeBase classNames="bg-green-100 text-green-900">Express</BadgeBase>
   );
 };
 

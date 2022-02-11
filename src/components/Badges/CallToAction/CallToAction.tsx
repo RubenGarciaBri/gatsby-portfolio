@@ -13,20 +13,20 @@ const CallToAction = () => {
         <form className="flex items-center justify-center gap-5 mx-auto mt-6">
           <input
             type="text"
-            className="px-6 py-5 text-xl text-gray-500 rounded-lg drop-shadow-sm"
+            className="px-6 py-5 text-xl text-gray-500 rounded-2xl drop-shadow-sm"
             required
             placeholder="Your Name"
           />
           <input
             type="email"
-            className="px-6 py-5 text-xl text-gray-500 rounded-lg drop-shadow-sm"
+            className="px-6 py-5 text-xl text-gray-500 rounded-2xl drop-shadow-sm"
             required
             placeholder="Your Email Address"
           />
           <input
             type="submit"
             value="Subscribe"
-            className="px-20 py-5 text-xl font-semibold text-white bg-blue-500 rounded-lg cursor-pointer drop-shadow-sm"
+            className="px-20 py-5 text-xl font-semibold text-white bg-blue-500 rounded-2xl cursor-pointer drop-shadow-sm"
           />
         </form>
       </div>

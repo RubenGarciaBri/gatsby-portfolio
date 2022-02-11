@@ -4,9 +4,7 @@ import BadgeBase from "../BadgeBase";
 
 const GatsbyBadge = () => {
   return (
-    <BadgeBase color="#1b092c" bgColor="#dec8f4">
-      Gatsby
-    </BadgeBase>
+    <BadgeBase classNames="bg-purple-100 text-purple-900">Gatsby</BadgeBase>
   );
 };
 

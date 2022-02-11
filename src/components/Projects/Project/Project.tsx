@@ -23,11 +23,11 @@ const Project = ({
 }: IPropTypes) => {
   return (
     <div className="small-container">
-      <div className="p-8 bg-white drop-shadow-2xl rounded-3xl project">
+      <div className="p-8 bg-white drop-shadow-2xl rounded-2xl project">
         <Link to={`/projects/${slug}`}>
           <img
             src={image}
-            className="w-full rounded-3xl "
+            className="w-full rounded-2xl "
             alt="Ruben's profile picture"
           />
         </Link>

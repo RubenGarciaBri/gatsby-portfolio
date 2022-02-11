@@ -18,7 +18,7 @@ const ProjectDetails = ({ data }) => {
       <Header />
       <div className="main-container">
         <div className="px-6">
-          <div className="mt-10 h-[500px] bg-gray-300 rounded-xl"></div>
+          <div className="mt-10 h-[500px] bg-gray-300 rounded-2xl"></div>
           <div className="flex mt-16 gap-x-12">
             <div className="w-3/4">
               <h1 className="mb-4 text-4xl font-semibold">{title}</h1>

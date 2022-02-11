@@ -4,9 +4,7 @@ import BadgeBase from "../BadgeBase";
 
 const GraphQLBadge = () => {
   return (
-    <BadgeBase color="#380126" bgColor="#fea0df">
-      GraphQL
-    </BadgeBase>
+    <BadgeBase classNames="bg-fuchsia-100 text-fuchsia-900">GraphQL</BadgeBase>
   );
 };
 

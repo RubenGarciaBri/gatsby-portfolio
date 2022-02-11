@@ -20,7 +20,7 @@ const HeroContainer = ({ heading, subHeading }: IPropTypes) => {
       <div className="px-6">
         <div className="flex flex-col items-stretch pb-12 mt-20 text-center xl:text-left justify-items-start xl:flex-row">
           <div className="mr-8 lg:mx-auto lg:w-4/5 xl:w-3/5">
-            <div className="flex items-center justify-center mb-6 xl:justify-start gap-x-5">
+            <div className="flex items-center justify-center mb-5 xl:justify-start gap-x-5">
               <h3 className="flex text-xl text-gray-400 sm:text-2xl subheading">
                 {subHeading}
               </h3>
@@ -35,40 +35,26 @@ const HeroContainer = ({ heading, subHeading }: IPropTypes) => {
               style={{ lineHeight: 1.15 }}
               className="mb-12 text-4xl font-bold md:text-6xl lg:text-6xl"
             >
-              I Write About How to Build Modern, Scalable Full-stack{" "}
+              I Write About How to Build Modern, Fast and Scalable{" "}
               <span className="text-blue-500">React Applications</span>
             </h1>
-            {/* <ul className="flex justify-center mb-12 xl:justify-start">
-              {socialLinksData &&
-                socialLinksData.map(({ type, url }) => {
-                  return (
-                    <li key={type} className="mr-4">
-                      <SocialButton type={type} url={url} />
-                    </li>
-                  );
-                })}
-            </ul> */}
-            {/* <div className="flex justify-center mt-1 gap-x-6 xl:justify-start">
-              <PrimaryButton>Let's Talk</PrimaryButton>
-              <SecondaryButton>See My Work</SecondaryButton>
-            </div> */}
             <form className="max-w-[550px]">
               <input
                 type="text"
                 required
                 placeholder="Your Name"
-                className="w-full px-6 py-5 mb-4 text-xl text-gray-500 border-2 border-gray-300 rounded-lg"
+                className="w-full px-6 py-5 mb-4 text-xl text-gray-500 border-2 border-gray-300 rounded-2xl"
               />
               <input
                 type="email"
                 required
                 placeholder="Your Email Address"
-                className="w-full px-6 py-5 mb-4 text-xl text-gray-500 border-2 border-gray-300 rounded-lg"
+                className="w-full px-6 py-5 mb-4 text-xl text-gray-500 border-2 border-gray-300 rounded-2xl"
               />
               <input
                 type="submit"
                 value="Join The Community"
-                className="w-full py-5 text-xl font-semibold text-white bg-blue-500 border-2 border-blue-500 rounded-lg cursor-pointer drop-shadow-lg "
+                className="w-full py-5 text-xl font-semibold text-white bg-blue-500 border-2 border-blue-500 rounded-2xl cursor-pointer drop-shadow-lg "
               />
             </form>
           </div>

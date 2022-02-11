@@ -13,7 +13,7 @@ const ButtonBase = ({ children, classNames, small }: IPropTypes) => {
       <button
         className={`${
           small ? "px-6 py-4" : "px-6 py-4 md:px-10 md:py-5"
-        } font-bold md:text-lg rounded-lg drop-shadow-md ${
+        } font-bold md:text-lg rounded-2xl drop-shadow-md ${
           classNames && classNames
         }`}
       >

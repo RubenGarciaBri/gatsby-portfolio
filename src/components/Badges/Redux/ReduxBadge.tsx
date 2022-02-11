@@ -4,9 +4,7 @@ import BadgeBase from "../BadgeBase";
 
 const ReduxBadge = () => {
   return (
-    <BadgeBase color="#1a102a" bgColor="#cbbae5">
-      Redux
-    </BadgeBase>
+    <BadgeBase classNames="bg-violet-100 text-violet-900">Redux</BadgeBase>
   );
 };
 

@@ -44,7 +44,7 @@ const Input = ({
         name={name}
         id={id}
         placeholder={placeholder}
-        className={`pl-12 w-full p-4 text-xl border-gray-300 rounded-lg mb-8 ${
+        className={`pl-12 w-full p-4 text-xl border-gray-300 rounded-2xl mb-8 ${
           classNames && classNames
         }`}
         onChange={e => onChange(e.target.value)}
