@@ -28,12 +28,12 @@ const Layout = ({ children }) => {
   `);
 
   return (
-    <>
+    <div className="bg-gray-50">
       <Navbar />
       {children}
       <CallToAction />
       <Footer />
-    </>
+    </div>
   );
 };
 

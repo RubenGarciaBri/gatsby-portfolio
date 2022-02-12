@@ -23,8 +23,8 @@ const blog = () => {
             postsData.map(({ title, excerpt, timestamp, badgeNames }) => {
               return (
                 <div className="flex justify-center cursor-pointer mb-14">
-                  <div className="w-2/6 bg-gray-100 rounded-xl drop-shadow"></div>
-                  <div className="w-4/6 px-12 py-12 bg-white cursor-pointer ">
+                  <div className="w-2/6 bg-gray-200 rounded-xl drop-shadow"></div>
+                  <div className="w-4/6 px-12 py-12 cursor-pointer bg-gray-50 ">
                     <h3 className="mb-1.5 capitalize text-3xl font-bold">
                       {title}
                     </h3>

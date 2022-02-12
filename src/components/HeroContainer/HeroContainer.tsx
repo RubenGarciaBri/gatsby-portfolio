@@ -21,7 +21,7 @@ const HeroContainer = ({ heading, subHeading }: IPropTypes) => {
         <div className="flex flex-col items-stretch pb-12 mt-20 text-center xl:text-left justify-items-start xl:flex-row">
           <div className="mr-8 lg:mx-auto lg:w-4/5 xl:w-3/5">
             <div className="flex items-center justify-center mb-5 xl:justify-start gap-x-5">
-              <h3 className="flex text-xl text-gray-400 sm:text-2xl subheading">
+              <h3 className="flex text-xl text-gray-500 sm:text-2xl subheading">
                 {subHeading}
               </h3>
               <StaticImage
@@ -54,7 +54,7 @@ const HeroContainer = ({ heading, subHeading }: IPropTypes) => {
               <input
                 type="submit"
                 value="Join The Community"
-                className="w-full py-5 text-xl font-semibold text-white bg-blue-500 border-2 border-blue-500 rounded-2xl cursor-pointer drop-shadow-lg "
+                className="w-full py-5 text-xl font-semibold text-white bg-blue-500 border-2 border-blue-500 cursor-pointer rounded-2xl drop-shadow-lg "
               />
             </form>
           </div>

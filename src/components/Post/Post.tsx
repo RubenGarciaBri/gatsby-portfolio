@@ -7,7 +7,7 @@ import { badges } from "../../data/badges";
 
 const Post = ({ title, excerpt, timestamp, badgeNames }) => {
   return (
-    <div className="overflow-hidden transition duration-300 bg-white ">
+    <div className="overflow-hidden transition duration-300 bg-gray-50 ">
       <div className="h-[320px] bg-gray-200 rounded-xl drop-shadow cursor-pointer">
         {/* <StaticImage src="../../images/640x360.png" alt="Post header picture" /> */}
       </div>
