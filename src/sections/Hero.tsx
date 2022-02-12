@@ -12,7 +12,6 @@ const Hero = () => {
 
   return (
     <section id="section-1" className="min-h-screen hero-section">
-      <Navbar />
       <HeroContainer heading={heading} subHeading={subHeading} />
       <div className="main-container">
         <LatestPosts />

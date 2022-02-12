@@ -21,3 +21,11 @@ export const getTechIcons = (array: Array<any>) => {
 
   return array.map(item => obj[item]);
 };
+
+export const timestampToDate = (timestamp: number) => {
+  return new Date(timestamp).toLocaleDateString("en-US", {
+    year: "numeric",
+    month: "long",
+    day: "numeric",
+  });
+};

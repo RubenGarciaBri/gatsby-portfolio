@@ -2,6 +2,7 @@ import React from "react";
 
 import { StaticImage } from "gatsby-plugin-image";
 
+import { timestampToDate } from "../../utils/helpers";
 import { badges } from "../../data/badges";
 
 const Post = ({ title, excerpt, timestamp, badgeNames }) => {
@@ -13,11 +14,7 @@ const Post = ({ title, excerpt, timestamp, badgeNames }) => {
       <div className="p-8">
         <h3 className="mb-1.5 capitalize text-2xl font-bold">{title}</h3>
         <span className="block mb-3 text-gray-500">
-          {new Date(timestamp).toLocaleDateString("en-US", {
-            year: "numeric",
-            month: "long",
-            day: "numeric",
-          })}
+          {timestampToDate(timestamp)}
         </span>
         <ul className="flex mb-5 gap-x-3">
           {badgeNames &&
