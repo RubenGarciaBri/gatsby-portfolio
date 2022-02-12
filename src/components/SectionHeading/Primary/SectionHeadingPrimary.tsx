@@ -1,7 +1,5 @@
 import * as React from "react";
 
-import Divider from "../../Divider/Divider";
-
 interface IPropTypes {
   children: React.ReactNode;
   light?: boolean;
@@ -18,7 +16,6 @@ const SectionHeadingPrimary = ({ children, light, center }: IPropTypes) => {
       >
         {children}
       </h2>
-      <Divider center={center ? center : false} />
     </>
   );
 };

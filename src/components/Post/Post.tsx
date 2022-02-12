@@ -7,12 +7,14 @@ import { badges } from "../../data/badges";
 
 const Post = ({ title, excerpt, timestamp, badgeNames }) => {
   return (
-    <div className="overflow-hidden transition duration-300 bg-white cursor-pointer rounded-2xl drop-shadow-xl hover:scale-105">
-      <div className="">
-        <StaticImage src="../../images/640x360.png" alt="Post header picture" />
+    <div className="overflow-hidden transition duration-300 bg-white ">
+      <div className="h-[320px] bg-gray-200 rounded-xl drop-shadow cursor-pointer">
+        {/* <StaticImage src="../../images/640x360.png" alt="Post header picture" /> */}
       </div>
-      <div className="p-8">
-        <h3 className="mb-1.5 capitalize text-2xl font-bold">{title}</h3>
+      <div className="px-1 mt-8 cursor-pointer">
+        <h3 className="mb-1.5 capitalize text-2xl font-bold cursor-pointer">
+          {title}
+        </h3>
         <span className="block mb-3 text-gray-500">
           {timestampToDate(timestamp)}
         </span>
@@ -23,14 +25,6 @@ const Post = ({ title, excerpt, timestamp, badgeNames }) => {
             })}
         </ul>
         <p className="text-lg">{excerpt + "..."}</p>
-        {/* <div className="flex items-center mt-5">
-          <StaticImage
-            className="bg-gray-200 shadow-inner w-14 h-14 rounded-2xl"
-            src="../../images/prof-small.png"
-            alt="Author's profile picture"
-          />
-          <span className="ml-3 font-bold">By Ruben Garcia</span>
-        </div> */}
       </div>
     </div>
   );
