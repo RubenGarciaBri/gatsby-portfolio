@@ -2,11 +2,11 @@ import * as React from "react";
 
 import { StaticImage } from "gatsby-plugin-image";
 
-import Layout from "../components/layout";
-import { timestampToDate } from "../utils/helpers";
-import { postsData } from "../data/postsData";
+import Layout from "../../components/layout";
+import { timestampToDate } from "../../utils/helpers";
+import { postsData } from "../../data/postsData";
 
-const blog = () => {
+const index = () => {
   return (
     <Layout>
       <div className="main-container">
@@ -53,4 +53,4 @@ const blog = () => {
   );
 };
 
-export default blog;
+export default index;

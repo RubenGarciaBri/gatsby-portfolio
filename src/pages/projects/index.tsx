@@ -5,9 +5,7 @@ import Layout from "../../components/layout";
 const index = () => {
   return (
     <div>
-      <Layout>
-          
-      </Layout>
+      <Layout></Layout>
     </div>
   );
 };

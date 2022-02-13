@@ -1,62 +1,54 @@
-import React from "react";
+import * as React from "react";
 
 import { graphql } from "gatsby";
+import { MDXRenderer } from "gatsby-plugin-mdx";
+import { MDXProvider } from "@mdx-js/react";
 
 import { badges } from "../data/badges";
+import { MDXComponents } from "../components/MDX/MDXComponents";
 
 import Header from "../components/header";
 import Footer from "../components/Layout/Footer/Footer";
 
+const Heading = ({ children }) => {
+  return <h2 className="text-3xl font-bold text-red-500">{children}</h2>;
+};
+
 const ProjectDetails = ({ data }) => {
   const { date, excerpt, featureImage, slug, title, badgeNames } =
     data.mdx.frontmatter;
-
-  console.log(badgeNames);
+  const { body } = data.mdx;
 
   return (
-    <div>
-      <Header />
-      <div className="main-container">
-        <div className="px-6">
-          <div className="mt-10 h-[500px] bg-gray-300 rounded-2xl"></div>
-          <div className="flex mt-16 gap-x-12">
-            <div className="w-3/4">
-              <h1 className="mb-4 text-4xl font-semibold">{title}</h1>
-              <h2 className="mb-4 text-2xl font-semibold">Overview</h2>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Consequuntur voluptatum beatae eius repellendus minus
-                exercitationem! Pariatur asperiores consequuntur molestiae odit
-                maxime voluptates tenetur vel at dolores sapiente! Non, cumque
-                deserunt.
-              </p>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Consequuntur voluptatum beatae eius repellendus minus
-                exercitationem.
-              </p>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Consequuntur voluptatum beatae eius repellendus minus
-                exercitationem! Pariatur asperiores consequuntur molestiae odit
-                maxime voluptates tenetur vel at dolores sapiente! Non, cumque
-                deserunt.
-              </p>
-            </div>
-            <div className="w-1/4">
-              <h2 className="mb-4 text-2xl font-semibold">Technologies</h2>
-              <ul className="flex gap-x-2.5 gap-y-2.5 mb-7 flex-wrap">
-                {badgeNames &&
-                  badgeNames.map((badgeName, i) => (
-                    <li key={i}>{badges[badgeName]}</li>
-                  ))}
-              </ul>
+    <MDXProvider components={MDXComponents}>
+      <div>
+        <Header />
+        <div className="main-container">
+          <div className="px-6">
+            <div className="mt-10 h-[500px] bg-gray-300 rounded-2xl"></div>
+            <div className="flex mt-16 gap-x-12">
+              <div className="w-3/4">
+                <h1 className="mb-4 text-4xl font-semibold">{title}</h1>
+                <h2 className="mb-4 text-2xl font-semibold">Overview</h2>
+                <div className="text-lg">
+                  <MDXRenderer>{body}</MDXRenderer>
+                </div>
+              </div>
+              <div className="w-1/4">
+                <h2 className="mb-4 text-2xl font-semibold">Technologies</h2>
+                <ul className="flex gap-x-2.5 gap-y-2.5 mb-7 flex-wrap">
+                  {badgeNames &&
+                    badgeNames.map((badgeName, i) => (
+                      <li key={i}>{badges[badgeName]}</li>
+                    ))}
+                </ul>
+              </div>
             </div>
           </div>
         </div>
+        <Footer />
       </div>
-      <Footer />
-    </div>
+    </MDXProvider>
   );
 };
 
@@ -66,11 +58,10 @@ export const query = graphql`
       frontmatter {
         date
         excerpt
-        featureImage
         slug
         title
-        badgeNames
       }
+      body
     }
   }
 `;
