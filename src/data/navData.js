@@ -12,10 +12,6 @@ export const navData = [
     link: "/blog",
   },
   {
-    title: "Resources",
-    link: "/projects",
-  },
-  {
     title: "Contact",
     link: "/contact",
   },

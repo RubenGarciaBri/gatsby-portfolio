@@ -10,7 +10,7 @@ const Label = ({ children, htmlFor, classNames }: IPropTypes) => {
   return (
     <label
       htmlFor={htmlFor}
-      className={`mb-3 text-lg text-gray-300 ${classNames && classNames}`}
+      className={`mb-3 text-gray-300 ${classNames && classNames}`}
     >
       {children}
     </label>

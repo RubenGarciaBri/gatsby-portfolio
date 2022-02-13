@@ -10,7 +10,7 @@ const SectionHeadingPrimary = ({ children, light, center }: IPropTypes) => {
   return (
     <>
       <h2
-        className={`mb-6 lg:mb-8 text-4xl lg:text-5xl font-bold ${
+        className={`mb-6 lg:mb-8 text-3xl lg:text-4xl font-bold ${
           light ? "text-white" : "text-gray-900"
         } ${center && "text-center"}`}
       >

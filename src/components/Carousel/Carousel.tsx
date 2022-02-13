@@ -19,7 +19,7 @@ const Carousel = ({ classNames }: IPropTypes) => {
             return (
               <div
                 key={index}
-                className="text-4xl md:text-5xl basis-[20%] sm:basis-[14%] xl:basis-auto item"
+                className="text-3xl md:text-4xl basis-[20%] sm:basis-[14%] xl:basis-auto item"
               >
                 <i
                   className={`${iconClassName} ${

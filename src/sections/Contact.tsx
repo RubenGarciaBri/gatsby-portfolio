@@ -14,10 +14,10 @@ const Contact = () => {
         <div className="w-1/2">
           <SectionHeadingSecondary>Contact</SectionHeadingSecondary>
           <SectionHeadingPrimary>Let's talk</SectionHeadingPrimary>
-          <p className="text-2xl">
+          <p className="text-xl">
             Want to get in touch? Contact me on the details below.
           </p>
-          <p className="mb-12 text-2xl"></p>
+          <p className="mb-12 text-xl"></p>
           <div className="">
             <ul className="mx-auto mb-6 md:w-full md:mx-0 w-80">
               {contactData &&
@@ -25,7 +25,7 @@ const Contact = () => {
                   return (
                     <li className="flex items-center mb-5 gap-x-5">
                       {Icon}
-                      <span className="text-2xl text-gray-600">{value}</span>
+                      <span className="text-xl text-gray-600">{value}</span>
                     </li>
                   );
                 })}

@@ -7,7 +7,7 @@ import Post from "../Post/Post";
 const LatestPosts = () => {
   return (
     <div>
-      <h2 className="m-20 text-5xl font-bold text-center">Latest Posts</h2>
+      <h2 className="m-20 text-4xl font-bold text-center">Latest Posts</h2>
       <div className="flex items-center justify-between gap-x-12">
         {postsData &&
           postsData.map(({ title, excerpt, timestamp, badgeNames }) => {

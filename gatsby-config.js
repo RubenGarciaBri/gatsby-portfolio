@@ -28,7 +28,6 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
-    `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
       resolve: `gatsby-plugin-manifest`,
@@ -50,6 +49,7 @@ module.exports = {
     `gatsby-plugin-react-helmet-async`,
     `gatsby-plugin-netlify`,
     `gatsby-transformer-sharp`,
+    `gatsby-plugin-feed-mdx`,
     {
       resolve: `gatsby-plugin-mdx`,
       options: {

@@ -9,8 +9,8 @@ const Footer = () => {
   return (
     <footer className="">
       <div className="main-container">
-        <div className="w-[80%] mx-auto pt-16 md:pt-20 pb-12">
-          <ul className="flex flex-col justify-center mb-12 text-xl text-center text-gray-500 gap-y-6 md:flex-row gap-x-12 lg:gap-x-20">
+        <div className="w-[80%] mx-auto pt-14 md:pt-14 pb-10">
+          <ul className="flex flex-col justify-center mb-12 text-lg text-center text-gray-500 gap-y-6 md:flex-row gap-x-12 lg:gap-x-20">
             {navData &&
               navData.map(({ title, sectionLink }, i) => {
                 return (
@@ -26,7 +26,7 @@ const Footer = () => {
                 return (
                   <li
                     key={i}
-                    className="p-3 text-2xl text-white duration-200 bg-gray-400 rounded-full cursor-pointer hover:bg-blue-500"
+                    className="p-3 text-xl text-white duration-200 bg-gray-400 rounded-full cursor-pointer hover:bg-blue-500"
                   >
                     {Icon}
                   </li>
