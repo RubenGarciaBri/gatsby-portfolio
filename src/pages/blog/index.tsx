@@ -1,12 +1,15 @@
 import * as React from "react";
 
 import { StaticImage } from "gatsby-plugin-image";
+import { graphql } from "gatsby";
+import { Link } from "gatsby";
 
+import { badges } from "../../data/badges";
 import Layout from "../../components/layout";
-import { timestampToDate } from "../../utils/helpers";
-import { postsData } from "../../data/postsData";
 
-const index = () => {
+const index = ({ data }) => {
+  const { edges } = data.allMdx;
+
   return (
     <Layout>
       <div className="main-container">
@@ -19,32 +22,40 @@ const index = () => {
         </div>
         <div className="mx-auto mb-32 max-w-[1180px]">
           <h2 className="mb-8 text-4xl font-bold">All Posts</h2>
-          {postsData &&
-            postsData.map(({ title, excerpt, timestamp, badgeNames }) => {
+          {edges &&
+            edges.map(edge => {
+              const { author, badgeNames, date, excerpt, slug, title } =
+                edge.node.frontmatter;
+
               return (
-                <div className="flex justify-center cursor-pointer mb-14">
-                  <div className="w-2/6 bg-gray-200 rounded-xl drop-shadow"></div>
-                  <div className="w-4/6 px-12 py-12 cursor-pointer bg-gray-50 ">
-                    <h3 className="mb-1.5 capitalize text-2xl font-bold">
-                      {title}
-                    </h3>
-                    <span className="block mb-3 text-gray-600 ">
-                      {timestampToDate(timestamp)}
-                    </span>
-                    <p className="mb-4 text-lg">{excerpt}</p>
-                    {/* <button className="pl-4 text-xl border-l-4 border-blue-500">
+                <Link to={`/blog/${slug}`}>
+                  <div className="flex justify-center cursor-pointer mb-14">
+                    <div className="w-2/6 bg-gray-200 rounded-xl drop-shadow"></div>
+                    <div className="w-4/6 px-12 py-8 cursor-pointer ">
+                      <h3 className="mb-1.5 capitalize text-2xl font-bold">
+                        {title}
+                      </h3>
+                      <span className="block mb-3 text-gray-600 ">{date}</span>
+                      <p className="mb-4 text-lg">{excerpt}</p>
+                      <ul className="flex gap-x-2">
+                        {badgeNames &&
+                          badgeNames.map(badgeName => {
+                            return <li>{badges[badgeName]}</li>;
+                          })}
+                      </ul>
+                      {/* <button className="pl-4 text-xl border-l-4 border-blue-500">
                       Read More
                     </button> */}
-                    <div className="flex items-center mt-6">
-                      <StaticImage
-                        className="w-10 h-10 bg-gray-200 shadow-inner rounded-2xl"
-                        src="../images/prof-small.png"
-                        alt="Author's profile picture"
-                      />
-                      <span className="ml-3 font-bold">By Ruben Garcia</span>
+                      {/* <div className="flex items-center mt-6">
+                        <StaticImage
+                          className="w-10 h-10 bg-gray-200 shadow-inner rounded-2xl"
+                          src="../images/prof-small.png"
+                          alt="Author's profile picture"
+                        />
+                      </div> */}
                     </div>
                   </div>
-                </div>
+                </Link>
               );
             })}
         </div>
@@ -52,5 +63,25 @@ const index = () => {
     </Layout>
   );
 };
+
+export const query = graphql`
+  query getArticles($type: String = "article") {
+    allMdx(filter: { frontmatter: { type: { eq: $type } } }) {
+      edges {
+        node {
+          frontmatter {
+            slug
+            title
+            excerpt
+            date(formatString: "DD MMMM, YYYY")
+            badgeNames
+            author
+            type
+          }
+        }
+      }
+    }
+  }
+`;
 
 export default index;

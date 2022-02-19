@@ -16,17 +16,14 @@ const Article = ({ data }) => {
     data.mdx.frontmatter;
   const { body } = data.mdx;
 
-  console.log(featuredImg)
-
   return (
     <MDXProvider components={MDXComponents}>
       <Layout>
         <div className="main-container">
           <div className="py-32 my-12 bg-gray-200 rounded-xl">
             <div className="text-center">
-              <h1 className="mb-1 text-5xl font-bold">{title}</h1>
-              <h2 className="mb-3 text-2xl">{excerpt}</h2>
-              <span>{author}</span>
+              <h1 className="mb-4 text-5xl font-bold">{title}</h1>
+              <span>{author} - </span>
               <span>{date}</span>
               {/* <Img fluid={featuredImg.childImageSharp.fluid} /> */}
 
