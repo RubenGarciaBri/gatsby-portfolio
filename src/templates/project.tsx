@@ -7,22 +7,16 @@ import { MDXProvider } from "@mdx-js/react";
 import { badges } from "../data/badges";
 import { MDXComponents } from "../components/MDX/MDXComponents";
 
-import Header from "../components/header";
-import Footer from "../components/Layout/Footer/Footer";
+import Layout from "../components/layout";
 
-const Heading = ({ children }) => {
-  return <h2 className="text-3xl font-bold text-red-500">{children}</h2>;
-};
-
-const ProjectDetails = ({ data }) => {
+const Project = ({ data }) => {
   const { date, excerpt, featureImage, slug, title, badgeNames } =
     data.mdx.frontmatter;
   const { body } = data.mdx;
 
   return (
     <MDXProvider components={MDXComponents}>
-      <div>
-        <Header />
+      <Layout>
         <div className="main-container">
           <div className="px-6">
             <div className="mt-10 h-[500px] bg-gray-300 rounded-2xl"></div>
@@ -46,8 +40,7 @@ const ProjectDetails = ({ data }) => {
             </div>
           </div>
         </div>
-        <Footer />
-      </div>
+      </Layout>
     </MDXProvider>
   );
 };
@@ -66,4 +59,4 @@ export const query = graphql`
   }
 `;
 
-export default ProjectDetails;
+export default Project;

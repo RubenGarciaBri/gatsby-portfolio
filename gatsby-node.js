@@ -8,6 +8,7 @@ exports.createPages = async ({ graphql, actions }) => {
           node {
             frontmatter {
               slug
+              type
             }
           }
         }
@@ -16,11 +17,20 @@ exports.createPages = async ({ graphql, actions }) => {
   `);
 
   data.allMdx.edges.forEach(edge => {
-    const slug = edge.node.frontmatter.slug;
-    actions.createPage({
-      path: `/projects/${slug}`,
-      component: path.resolve("./src/templates/project-details.tsx"),
-      context: { slug: slug },
-    });
+    const { slug, type } = edge.node.frontmatter;
+
+    if (type === "project") {
+      actions.createPage({
+        path: `/projects/${slug}`,
+        component: path.resolve("./src/templates/project.tsx"),
+        context: { slug: slug },
+      });
+    } else if (type === "article") {
+      actions.createPage({
+        path: `/blog/${slug}`,
+        component: path.resolve("./src/templates/article.tsx"),
+        context: { slug: slug },
+      });
+    }
   });
 };
