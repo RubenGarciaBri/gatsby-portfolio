@@ -2,7 +2,7 @@ const path = require("path");
 
 exports.createPages = async ({ graphql, actions }) => {
   const { data } = await graphql(`
-    query GetProjects {
+    query getMdxFiles {
       allMdx {
         edges {
           node {

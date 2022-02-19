@@ -21,7 +21,7 @@ const HeroContainer = ({ heading, subHeading }: IPropTypes) => {
         <div className="flex flex-col items-stretch pb-12 mt-16 text-center xl:text-left justify-items-start xl:flex-row">
           <div className="mr-8 lg:mx-auto lg:w-4/5 xl:w-3/5">
             <div className="flex items-center justify-center mb-4 xl:justify-start gap-x-5">
-              <h3 className="flex text-lg text-gray-500 sm:text-xl subheading">
+              <h3 className="flex text-lg text-gray-600 sm:text-xl subheading">
                 {subHeading}
               </h3>
               <StaticImage
@@ -44,13 +44,13 @@ const HeroContainer = ({ heading, subHeading }: IPropTypes) => {
                 type="text"
                 required
                 placeholder="Your Name"
-                className="w-full px-5 py-4 mb-4 text-lg text-gray-500 border-2 border-gray-300 rounded-2xl"
+                className="w-full px-5 py-4 mb-4 text-lg text-gray-600 border-2 border-gray-300 rounded-2xl"
               />
               <input
                 type="email"
                 required
                 placeholder="Your Email Address"
-                className="w-full px-5 py-4 mb-4 text-lg text-gray-500 border-2 border-gray-300 rounded-2xl"
+                className="w-full px-5 py-4 mb-4 text-lg text-gray-600 border-2 border-gray-300 rounded-2xl"
               />
               <input
                 type="submit"

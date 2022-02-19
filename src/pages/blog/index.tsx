@@ -28,7 +28,7 @@ const index = () => {
                     <h3 className="mb-1.5 capitalize text-2xl font-bold">
                       {title}
                     </h3>
-                    <span className="block mb-3 text-gray-500 ">
+                    <span className="block mb-3 text-gray-600 ">
                       {timestampToDate(timestamp)}
                     </span>
                     <p className="mb-4 text-lg">{excerpt}</p>

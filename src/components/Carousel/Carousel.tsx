@@ -23,7 +23,7 @@ const Carousel = ({ classNames }: IPropTypes) => {
               >
                 <i
                   className={`${iconClassName} ${
-                    colored ? "colored" : "text-gray-500"
+                    colored ? "colored" : "text-gray-600"
                   } `}
                 ></i>
               </div>

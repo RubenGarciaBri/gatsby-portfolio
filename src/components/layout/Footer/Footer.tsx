@@ -10,7 +10,7 @@ const Footer = () => {
     <footer className="">
       <div className="main-container">
         <div className="w-[80%] mx-auto pt-14 md:pt-14 pb-10">
-          <ul className="flex flex-col justify-center mb-12 text-lg text-center text-gray-500 gap-y-6 md:flex-row gap-x-12 lg:gap-x-20">
+          <ul className="flex flex-col justify-center mb-12 text-lg text-center text-gray-600 gap-y-6 md:flex-row gap-x-12 lg:gap-x-20">
             {navData &&
               navData.map(({ title, sectionLink }, i) => {
                 return (
@@ -20,7 +20,7 @@ const Footer = () => {
                 );
               })}
           </ul>
-          <ul className="flex justify-center mb-10 text-gray-500 gap-x-8">
+          <ul className="flex justify-center mb-10 text-gray-600 gap-x-8">
             {socialLinksData &&
               socialLinksData.map(({ type, url, Icon }, i) => {
                 return (
@@ -33,7 +33,7 @@ const Footer = () => {
                 );
               })}
           </ul>
-          <p className="flex items-center justify-center text-center text-gray-500">
+          <p className="flex items-center justify-center text-center text-gray-600">
             <span>
               Built by Ruben Garcia with <strong>Gatsby</strong>
             </span>

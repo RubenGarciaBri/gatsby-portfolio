@@ -15,7 +15,7 @@ const Post = ({ title, excerpt, timestamp, badgeNames }) => {
         <h3 className="mb-1.5 capitalize text-2xl font-bold cursor-pointer">
           {title}
         </h3>
-        <span className="block mb-3 text-gray-500">
+        <span className="block mb-3 text-gray-600">
           {timestampToDate(timestamp)}
         </span>
         <ul className="flex mb-5 gap-x-3">

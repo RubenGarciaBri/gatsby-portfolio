@@ -11,6 +11,11 @@
   margin: 0 auto;
 }
 
+.container-sm {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
 html,
 body {
   font-family: "Nunito Sans", sans-serif;
@@ -28,7 +33,7 @@ h6 {
 
 p {
   line-height: 2rem !important;
-  @apply text-gray-500;
+  @apply text-gray-600;
 }
 
 .logo {
