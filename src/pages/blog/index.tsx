@@ -12,16 +12,17 @@ const index = ({ data }) => {
 
   return (
     <Layout>
-      <div className="main-container">
-        <div className="max-w-[750px] mx-auto text-center mb-16">
+      <div className="container-sm">
+        <div className="mb-24 text-center">
           <h1 className="mt-16 text-5xl font-bold">Blog</h1>
           <p className="mt-6 text-xl ">
-            Here you can find all my articles to date. The main topics I touch
-            on are React, NextJs, Redux and Serverless.
+            Here you can find all my articles to date.
+            <br />
+            The main topics I touch on are React, NextJs, Redux and Serverless.
           </p>
         </div>
-        <div className="mx-auto mb-32 max-w-[1180px]">
-          <h2 className="mb-8 text-4xl font-bold">All Posts</h2>
+        <div className="mb-32">
+          <h2 className="mb-10 text-4xl font-bold">All Posts</h2>
           {edges &&
             edges.map(edge => {
               const { author, badgeNames, date, excerpt, slug, title } =
@@ -29,14 +30,18 @@ const index = ({ data }) => {
 
               return (
                 <Link to={`/blog/${slug}`}>
-                  <div className="flex justify-center cursor-pointer mb-14">
-                    <div className="w-2/6 bg-gray-200 rounded-xl drop-shadow"></div>
-                    <div className="w-4/6 px-12 py-8 cursor-pointer ">
-                      <h3 className="mb-1.5 capitalize text-2xl font-bold">
-                        {title}
-                      </h3>
-                      <span className="block mb-3 text-gray-600 ">{date}</span>
-                      <p className="mb-4 text-lg">{excerpt}</p>
+                  <div className="flex justify-center mb-16 cursor-pointer">
+                    {/* <div className="w-2/6 bg-gray-200 rounded-xl drop-shadow"></div> */}
+                    <div className="cursor-pointer">
+                      <div className="flex items-center justify-between">
+                        <h3 className="mb-1.5 capitalize text-2xl font-bold">
+                          {title}
+                        </h3>
+                        <span className="block mb-3 text-gray-600 ">
+                          {date}
+                        </span>
+                      </div>
+                      <p className="mb-3 text-lg">{excerpt}</p>
                       <ul className="flex gap-x-2">
                         {badgeNames &&
                           badgeNames.map(badgeName => {
