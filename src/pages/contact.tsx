@@ -3,7 +3,7 @@ import * as React from "react";
 import Layout from "../components/layout";
 import Contact from "../sections/Contact";
 
-const contact = () => {
+const ContactPage = () => {
   return (
     <Layout>
       <Contact />
@@ -11,4 +11,4 @@ const contact = () => {
   );
 };
 
-export default contact;
+export default ContactPage;

@@ -7,7 +7,7 @@ import { Link } from "gatsby";
 import { badges } from "../../data/badges";
 import Layout from "../../components/layout";
 
-const index = ({ data }) => {
+const Index = ({ data }) => {
   const { edges } = data.allMdx;
 
   return (
@@ -89,4 +89,4 @@ export const query = graphql`
   }
 `;
 
-export default index;
+export default Index;
