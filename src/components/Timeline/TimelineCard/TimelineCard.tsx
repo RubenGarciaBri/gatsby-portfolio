@@ -24,13 +24,13 @@ const TimelineCard = ({
   children,
 }: IPropTypes) => {
   return (
-    <div className="absolute w-[450px] lg:w-[620px] sm:w-[550px] p-10 -translate-x-1/2 -translate-y-1/2 bg-gray-200 lg:translate-x-0 top-1/2 left-1/2 lg:-translate-y-1/3 rounded-2xl drop-shadow-xl lg:top-1/3 lg:left-20">
-      <div className="absolute hidden w-6 h-6 rotate-45 bg-gray-200 lg:block -translate-y-1/3 -left-3 top-1/3"></div>
+    <div className="absolute w-[450px] lg:w-[620px] sm:w-[550px] p-10 -translate-x-1/2 -translate-y-1/2 bg-white border lg:translate-x-0 top-1/2 left-1/2 lg:-translate-y-1/3 rounded-2xl drop-shadow-xl lg:top-1/3 lg:left-20">
+      <div className="absolute hidden w-6 h-6 rotate-45 bg-white border-b border-l lg:block -translate-y-1/3 -left-3 top-1/3"></div>
       <div className="flex items-center mb-3">
         <img
           src={companyImg}
           alt="BehaviourLab Logo"
-          className="w-16 h-16 rounded-2xl shadow-inner"
+          className="w-16 h-16 shadow-inner rounded-2xl"
         />
         <h3 className="mt-6 mb-6 ml-4 text-3xl font-semibold">{companyName}</h3>
       </div>

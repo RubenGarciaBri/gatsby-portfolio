@@ -14,7 +14,7 @@ const Footer = () => {
             {navData &&
               navData.map(({ title, sectionLink }, i) => {
                 return (
-                  <li key={i} className="cursor-pointer hover:text-blue-500">
+                  <li key={i} className="cursor-pointer hover:text-blue-600">
                     <Link to={sectionLink}>{title}</Link>
                   </li>
                 );
@@ -26,7 +26,7 @@ const Footer = () => {
                 return (
                   <li
                     key={i}
-                    className="p-3 text-xl text-white duration-200 bg-gray-400 rounded-full cursor-pointer hover:bg-blue-500"
+                    className="p-3 text-xl text-white duration-200 bg-gray-400 rounded-full cursor-pointer hover:bg-blue-600"
                   >
                     {Icon}
                   </li>

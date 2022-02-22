@@ -37,7 +37,7 @@ const HeroContainer = ({ heading, subHeading }: IPropTypes) => {
             >
               I Write About How to Build Modern, Fast and Scalable
               <br />
-              <span className="text-blue-500">React Applications</span>
+              <span className="text-blue-600">React Applications</span>
             </h1>
             <form className="max-w-[550px]">
               <input
@@ -55,7 +55,7 @@ const HeroContainer = ({ heading, subHeading }: IPropTypes) => {
               <input
                 type="submit"
                 value="Join The Community"
-                className="w-full py-5 text-lg font-semibold text-white bg-blue-500 border-2 border-blue-500 cursor-pointer rounded-2xl drop-shadow-lg "
+                className="w-full py-5 text-lg font-semibold text-white bg-blue-600 border-2 border-blue-600 cursor-pointer rounded-2xl drop-shadow-lg "
               />
             </form>
           </div>

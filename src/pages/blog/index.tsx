@@ -48,7 +48,7 @@ const index = ({ data }) => {
                             return <li>{badges[badgeName]}</li>;
                           })}
                       </ul>
-                      {/* <button className="pl-4 text-xl border-l-4 border-blue-500">
+                      {/* <button className="pl-4 text-xl border-l-4 border-blue-600">
                       Read More
                     </button> */}
                       {/* <div className="flex items-center mt-6">

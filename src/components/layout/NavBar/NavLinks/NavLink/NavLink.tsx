@@ -13,7 +13,7 @@ const NavLink = ({ title, link, classNames }: IPropTypes) => {
     <li className={classNames && classNames}>
       <Link
         to={link}
-        className="px-2 py-2 mr-8 text-lg font-semibold tracking-wide cursor-pointer hover:text-blue-500"
+        className="px-2 py-2 mr-8 text-lg font-semibold tracking-wide cursor-pointer hover:text-blue-600"
       >
         {title}
       </Link>

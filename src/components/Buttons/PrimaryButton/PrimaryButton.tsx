@@ -8,7 +8,7 @@ interface IPropTypes {
 
 const PrimaryButton = ({ children }: IPropTypes) => {
   return (
-    <ButtonBase classNames="text-white bg-gradient-to-br from-blue-500 to-blue-400">
+    <ButtonBase classNames="text-white bg-gradient-to-br from-blue-600 to-blue-400">
       {children}
     </ButtonBase>
   );

@@ -33,7 +33,7 @@ const Input = ({
     <div className="relative">
       <div
         className={`input-icon ${
-          isFocused ? "text-blue-500" : "text-gray-300"
+          isFocused ? "text-blue-600" : "text-gray-300"
         }`}
       >
         {Icon}

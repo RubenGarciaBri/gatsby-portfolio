@@ -39,8 +39,8 @@ const About = () => {
             a better place. I believe writing code is the way to go.
           </p>
           <div className="text-center md:text-left">
-            <TertiaryButton classNames="mr-5">Learn More</TertiaryButton>
-            <TertiaryButton>See My Projects</TertiaryButton>
+            {/* <TertiaryButton classNames="mr-5">Learn More</TertiaryButton>
+            <TertiaryButton>See My Projects</TertiaryButton> */}
           </div>
         </div>
       </div>

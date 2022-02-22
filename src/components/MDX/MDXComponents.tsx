@@ -10,7 +10,7 @@ export const MDXComponents = {
   blockquote: props => (
     <blockquote
       {...props}
-      className="px-6 py-3 my-3 bg-gray-100 border-l-8 border-blue-500 rounded-lg"
+      className="px-6 py-3 my-3 bg-gray-100 border-l-8 border-blue-600 rounded-lg"
     />
   ),
 };
