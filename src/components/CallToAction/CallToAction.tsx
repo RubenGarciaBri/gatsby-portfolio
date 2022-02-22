@@ -15,13 +15,13 @@ const CallToAction = () => {
             type="text"
             className="px-5 py-4 text-lg text-gray-600 rounded-2xl drop-shadow-sm"
             required
-            placeholder="Your Name"
+            placeholder="Name"
           />
           <input
             type="email"
             className="px-5 py-4 text-lg text-gray-600 rounded-2xl drop-shadow-sm"
             required
-            placeholder="Your Email Address"
+            placeholder="Email address"
           />
           <input
             type="submit"
