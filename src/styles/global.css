@@ -50,6 +50,11 @@ p {
   margin: 0 auto;
 }
 
+.container-xs {
+  max-width: 850px;
+  margin: 0 auto;
+}
+
 .input-icon {
   position: absolute;
   top: 20px;

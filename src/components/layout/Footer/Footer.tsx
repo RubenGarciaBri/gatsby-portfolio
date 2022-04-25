@@ -28,7 +28,9 @@ const Footer = () => {
                     key={i}
                     className="p-3 text-xl text-white duration-200 bg-gray-400 rounded-full cursor-pointer hover:bg-blue-600"
                   >
-                    {Icon}
+                    <a href={url} target="_blank">
+                      {Icon}
+                    </a>
                   </li>
                 );
               })}

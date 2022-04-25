@@ -43,7 +43,7 @@ const HeroContainer = ({ heading, subHeading }: IPropTypes) => {
               <input
                 type="text"
                 required
-                placeholder="N  ame"
+                placeholder="Name"
                 className="w-full px-5 py-4 mb-4 text-lg text-gray-600 border-2 border-gray-300 rounded-2xl"
               />
               <input
