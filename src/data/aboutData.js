@@ -4,5 +4,5 @@ export const aboutData = [
   "In 2021 I joined BehaviourLab where I co-developed the front-end of a Fintech SASS product from scratch. The main technologies I’ve been working on during this time are React, Next.js, Typescript, TailwindCSS and D3.",
   "I consider myself a very driven, self-reliant and entrepreneurial person. Capable of picking up new concepts fast, researching solutions to complex problems and making the most out of the available resources at any given time.",
   "My long term vision is to make the world a better place by solving complex problems through technology, as well as creating an exciting future for everyone. This is what keeps me in a state of meaningful engagement and the reason why I love writing code so much.",
-  "During my free time, I enjoy learning about new exciting technologies, reading books on human behaviour, stoicism and business, and lifting weights.",
+  "During my free time, I enjoy learning about new exciting technologies, reading books and lifting weights.",
 ];
