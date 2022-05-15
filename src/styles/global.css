@@ -1,0 +1,63 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.btn {
+  @apply inline py-4 px-10 rounded-full text-lg  text-black font-bold mr-3 bg-white tracking-wide shadow;
+}
+
+.main-container {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.container-sm {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+html,
+body {
+  font-family: "Nunito Sans", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Source Sans Pro", sans-serif;
+  @apply text-gray-900;
+}
+
+p {
+  line-height: 2rem !important;
+  @apply text-gray-600;
+}
+
+.logo {
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+.divider {
+  @apply bg-blue-600 w-20;
+  height: 3px;
+}
+
+.small-container {
+  max-width: 1150px;
+  margin: 0 auto;
+}
+
+.container-xs {
+  max-width: 850px;
+  margin: 0 auto;
+}
+
+.input-icon {
+  position: absolute;
+  top: 20px;
+  left: 18px;
+  font-size: 18px;
+}
